@@ -493,3 +493,131 @@
 </body>
 
 </html>
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>English ↔ Urdu Translator</title>
+  <style>
+    body.urdu {
+      direction: rtl;
+      /* optionally a suitable Urdu-font family */
+      font-family: "Noto Nastaliq Urdu", "Urdu Naskh", serif;
+    }
+  </style>
+</head>
+<body id="pageBody">
+
+  <h1 data-key="heading">Welcome to My Website</h1>
+  <p data-key="intro">This website lets you switch languages from English to Urdu.</p>
+
+  <label for="inputText" data-key="labelInput">Enter English text:</label><br>
+  <textarea id="inputText" placeholder="Type English here…"></textarea><br><br>
+
+  <button id="translateBtn" data-key="buttonTranslate">Translate to Urdu</button><br><br>
+
+  <label data-key="labelOutput">Urdu result:</label><br>
+  <textarea id="outputText" placeholder="Urdu translation will appear here…"></textarea><br><br>
+
+  <button id="switchLangBtn">Switch to Urdu UI</button>
+
+  <script>
+    // Dictionary of UI strings
+    const dict = {
+      en: {
+        heading: "Welcome to My Website",
+        intro: "This website lets you switch languages from English to Urdu.",
+        labelInput: "Enter English text:",
+        buttonTranslate: "Translate to Urdu",
+        labelOutput: "Urdu result:",
+        switchLangBtn_en: "Switch to Urdu UI",
+        switchLangBtn_ur: "Switch to English UI"
+      },
+      ur: {
+        heading: "میری ویب سائٹ میں خوش آمدید",
+        intro: "یہ ویب سائٹ آپ کو انگریزی سے اردو زبان میں تبدیل کرنے کی اجازت دیتی ہے۔",
+        labelInput: "انگریزی متن درج کریں:",
+        buttonTranslate: "اردو میں ترجمہ کریں",
+        labelOutput: "اردو نتیجہ:",
+        switchLangBtn_en: "انگریزی UI پر جائیں",
+        switchLangBtn_ur: "اردو UI پر جائیں"
+      }
+    };
+
+    let currentUiLang = 'en';
+
+    // Function to switch UI language
+    function switchUiLanguage(lang) {
+      currentUiLang = lang;
+      // adjust direction and class
+      if (lang === 'ur') {
+        document.getElementById('pageBody').classList.add('urdu');
+        document.getElementById('pageBody').setAttribute('lang','ur');
+      } else {
+        document.getElementById('pageBody').classList.remove('urdu');
+        document.getElementById('pageBody').setAttribute('lang','en');
+      }
+
+      // find all elements with data-key and replace their text
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        const text = dict[lang][key];
+        if (text !== undefined) {
+          el.innerText = text;
+        }
+      });
+
+      // also switch the switch button text
+      const switchBtn = document.getElementById('switchLangBtn');
+      if (lang === 'en') {
+        switchBtn.innerText = dict.en.switchLangBtn_en;
+      } else {
+        switchBtn.innerText = dict.ur.switchLangBtn_ur;
+      }
+    }
+
+    // Function: a trivial translation of user‐entered English text to Urdu using a very small dictionary
+    const userDict = {
+      "Hello": "ہیلو",
+      "How are you?": "آپ کیسے ہیں؟",
+      "Good morning": "صبح بخیر",
+      "Thank you": "شکریہ",
+      "Translate": "ترجمہ کریں"
+      // add more fixed pairs as required
+    };
+
+    document.getElementById('translateBtn').addEventListener('click', () => {
+      const input = document.getElementById('inputText').value.trim();
+      if (!input) {
+        alert("Please enter text");
+        return;
+      }
+      const translated = userDict[input] || "ترجمہ دستیاب نہیں ہے"; // “Translation not available”
+      document.getElementById('outputText').value = translated;
+      // If Urdu UI active, ensure direction is correct
+      if (currentUiLang === 'ur') {
+        document.getElementById('outputText').style.direction = 'rtl';
+      } else {
+        document.getElementById('outputText').style.direction = 'ltr';
+      }
+    });
+
+    document.getElementById('switchLangBtn').addEventListener('click', () => {
+      // toggle
+      if (currentUiLang === 'en') {
+        switchUiLanguage('ur');
+      } else {
+        switchUiLanguage('en');
+      }
+    });
+
+    // On page load: set UI to English
+    switchUiLanguage('en');
+  </script>
+
+</body>
+</html> -->
