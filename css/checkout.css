@@ -1,0 +1,85 @@
+.uni-container{
+    width: 100%;
+  max-width: 80%;
+  min-width: 80%;
+  margin: 0 auto;
+}
+.checkout-page{
+
+}
+.checkout-top-content{
+   display: flex;
+   gap: 40px;
+}
+.checkout-top-left{
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+   padding: 0px 18px;
+}
+.check-sub-title{
+   font-size: 14px;
+}
+.payment-select-div{
+   display: flex;
+   align-items: center;
+   gap: 14px;
+}
+.payment-select-div img{
+    width: 50px;
+}
+.check-out-form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 40px;
+}
+.check-out-form input{
+   padding: 8px;
+   border: 1px solid #D9D9D9;
+   border-radius: 4px;
+}
+.check-out-form label{
+   font-size: 14px;
+}
+.expire-div{
+   display: flex;
+   gap: 16px;
+
+}
+.expire-div-1{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.check-div{
+   display: flex;
+   gap: 10px;
+}
+.confirm-btn{
+   background: #2f2483;
+   color: #fff;
+   border: none;
+   padding: 6px ;
+   border-radius: 4px;
+   margin-bottom: 20px;
+}
+.checkout-top-right{
+   background: #efedfe;
+}
+.course-price-div{
+   display: flex;
+   gap: 12px;
+  
+}
+.course-img-wrp img{
+   width: 100px;
+   border-radius: 6px;
+}
+.course-det-wrp{
+   display: flex;
+   flex-direction: column;
+    gap: 10px;
+   
+}
+.intro{
+   font-size: 12px;
+}
