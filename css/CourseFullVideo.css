@@ -1,6 +1,20 @@
 .video-img-wrp{
-    width: 100%;
+   width: 100%;
+   
+  object-fit: contain;
 }
 .video-img-wrp img{
-  width: 100%;
+width: 100%;
+ 
+}
+.after-vid-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.vid-desc{
+  color:  #696984;
+}
+.lorem-img-rate{
+  display: flex;
+  gap: 10px;
 }
