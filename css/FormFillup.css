@@ -1,7 +1,8 @@
 .fill-up-container{
     display: flex;
-    font-family: "Poppins",sans-serif;
+    font-family: 'Roboto';
     gap: 20px;
+    padding: 40px;
 }
 .fill-up-left{
   width: 30%;
@@ -24,7 +25,7 @@
     justify-content: space-between;
     /* background: #2f2483; */
     color: #2F2483;
-    padding: 4px 16px;
+    padding:  16px;
     border-radius: 8px;
 }
 .purple-col-div{

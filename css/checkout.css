@@ -1,10 +1,4 @@
-.uni-container{
-    width: 100%;
-  max-width: 80%;
-  min-width: 80%;
-  margin: 0 auto;
-  font-family: "Roboto";
-}
+
 .checkout-page{
    margin-top: 80px;
 
@@ -12,6 +6,7 @@
 .checkout-top-content{
    display: flex;
    gap: 40px;
+   justify-content: space-between;
 }
 .checkout-top-left{
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
@@ -133,4 +128,7 @@
    padding: 12px 0px;
    border-bottom: 1px solid #5B5B5B;
   
+}
+.checkout-bottom-content{
+ padding: 50px 0px;
 }
