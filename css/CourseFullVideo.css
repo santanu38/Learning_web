@@ -2,19 +2,93 @@
    width: 100%;
    
   object-fit: contain;
+  margin-bottom: 50px;
+  position: relative;
+  color: #fff;
+
 }
 .video-img-wrp img{
 width: 100%;
  
 }
-.after-vid-title{
+.vid-line-btn-wrp{
+  background: #0000004D;
+  position: absolute;
+  bottom: 0;
+    padding: 14px;
+    border-bottom-left-radius:12px ;
+    border-bottom-right-radius: 12px;
+}
+.play-btn-time-wrp{
+  display: flex;
+  gap: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.after-vid-title{
+  margin-top: 80px;
+  margin-bottom: 40px;
+   color: #252641;
 }
 .vid-desc{
   color:  #696984;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.lorem-ipsum{
+  padding: 26px;
+  background: #F48C064D;
+  border-radius: 8px;
+  margin-top: 40px;
 }
 .lorem-img-rate{
   display: flex;
   gap: 10px;
+}
+.vid-pr-img{
+  height: 60px;
+}
+.lorem-p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #2D3436;
+}
+.rating-lorem{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.rating-lorem img{
+   width: 100px;
+}
+.after-rate-para{
+  margin-top: 25px;
+  color: #696984;
+  line-height: 1.4;
+}
+.access-code{
+  margin-top: 30px;
+  padding-left: 6px;
+}
+.code-title{
+  font-size: 24px;
+}
+.access-code h2{
+  color: #252641;
+}
+.code-otp-div{
+  border: 1px solid #2D3436;
+  border-radius: 8px;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  width: 40%;
+}
+.copy-otp-btn{
+  border: none;
+}
+.student-bought-title{
+  font-size: 32px !important;
 }
