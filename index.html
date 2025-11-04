@@ -15,6 +15,18 @@
   <link rel="stylesheet" href="./css/blog.css" </head>
 
 <body>
+  <div class="sidebar_wrapper sidebar_not_active">
+    <i class="fa-solid fa-xmark" id="cross"></i>
+    <img src="./images/Logo.png" />
+    <hr />
+    <a href="">Home</a>
+    <a href="./blog.html">Blog</a>
+    <a href="./course.html">Courses</a>
+    <a href="./my-courses.html">My Courses</a>
+    <a>Eng</a>
+    <button onclick="window.location.href='./login.html'">Login</button>
+
+  </div>
   <div class="header-hero-wrap">
     <header class="header">
       <div class="uni-container header-content">
@@ -30,6 +42,7 @@
         <div class="right-section">
           <span class="lang">ENG</span>
           <button onclick="window.location.href='./login.html'" class="login-btn">Login</button>
+          <i class="fa-solid fa-bars" id="menu"></i>
         </div>
       </div>
     </header>
@@ -611,6 +624,29 @@
   </footer>
 
 
+  <script>
+
+    const menuBar = document.getElementById('menu');
+    const sideBar = document.querySelector('.sidebar_wrapper');
+    const cross = document.getElementById('cross')
+
+
+    menuBar.addEventListener('click', (() => {
+      if (sideBar.classList.contains('sidebar_not_active')) {
+        sideBar.classList.add('sidebar_active')
+        sideBar.classList.remove('sidebar_not_active')
+      } else {
+        sideBar.classList.add('sidebar_not_active')
+        sideBar.classList.remove('sidebar_active')
+      }
+    }))
+
+    cross.addEventListener('click',(()=>{
+      sideBar.classList.add('sidebar_not_active')
+      sideBar.classList.remove('sidebar_active')
+    }))
+  </script>
+
 </body>
 
 </html>
@@ -738,7 +774,7 @@
 
     // On page load: set UI to English
     switchUiLanguage('en');
-  </script>
+  </>
 
 </body>
 </html> -->
