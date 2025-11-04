@@ -148,3 +148,23 @@
      margin-top: 40px;
      font-size: 18px;
 }
+.play-btn_321{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+
+}
+.play-btn_321 i{
+    font-size: 11px;
+}
+.btn-bg-white{
+    background: #fff;
+}
+.btn-bg-purple{
+    background: #2F2483;
+    color: #fff;
+}
+.btn-bg-purple i{
+    font-size: 11px;
+}
