@@ -252,12 +252,12 @@
 
 .landing_banner_wrapper7896466 {
     width: 100%;
-    height: 75vh;
+
 }
 
 .landing_banner_wrapper7896466 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -316,7 +316,8 @@
         row-gap: 25px;
         width: 100%;
     }
-        .blog_right_content p {
+
+    .blog_right_content p {
         font-size: 16px;
         line-height: 30px;
     }
@@ -327,26 +328,91 @@
         margin-bottom: 10px;
         line-height: 24px;
     }
+
     .blogs_left_wrapper {
-    display: flex
-;
-    flex-direction: column;
-    row-gap: 20px;
-    width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+    }
+
+    .blog_left_img {
+        height: 60vh;
+    }
 }
-.blog_left_img {
-    height: 60vh;
+
+@media(max-width:899px) {
+    .blog_hero_content_wrapper {
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+
+    .blog_left {
+        width: 100%;
+    }
+
+    .blog_right {
+        width: 100%;
+    }
+
+    .blog_left h1 {
+        font-size: 40px;
+    }
+
+    .blog_list_cards_wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .blog_card {
+        width: 48%;
+    }
 }
-}
-@media(max-width:699px){
-    .blog_right_cards_wrapper{
+
+@media(max-width:699px) {
+    .blog_right_cards_wrapper {
         flex-direction: column;
     }
-    .blog_right_img_wrapper{
+
+    .blog_right_img_wrapper {
         width: 100%;
         height: 250px;
     }
-    .blog_right_content{
+
+    .blog_right_content {
         width: 100%;
+    }
+}
+
+@media(max-width:599px) {
+    .blog_card {
+        width: 47%;
+    }
+}
+
+@media(max-width:480px) {
+    .blog_card {
+        width: 100%;
+    }
+
+    .blog_content_wrappper h1 {
+        font-size: 40px;
+    }
+
+    .blog_wrapper {
+        padding-top: 0px !important;
+    }
+
+    .single_blog_wrapper7896 {
+        padding: 30px 0;
+    }
+
+    .single_blog_head_wrapper h1 {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .single_blog_wrapper7896 p {
+        font-size: 14px;
     }
 }

@@ -93,11 +93,13 @@
 .login_tabs_wrapper .active {
     background-color: #2f2483;
 }
-.login_tabs_wrapper a{
+
+.login_tabs_wrapper a {
     color: #fff;
     text-decoration: none;
-    
+
 }
+
 .login_form_wrapper p {
     color: rgba(91, 91, 91, 1);
     font-size: 18px;
@@ -168,4 +170,79 @@
     border-radius: 30px;
     background-color: rgba(47, 36, 131, 1);
     margin-left: auto;
+}
+
+@media(max-width:800px) {
+    .login_wrapper {
+        padding: 40px 40px;
+    }
+
+    .login_container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .login_img {
+        width: 80%;
+        border-radius: 15px;
+        min-height: 50vh;
+    }
+
+    .login_form_wrapper {
+        width: 80%;
+    }
+}
+
+@media(max-width:576px) {
+    .login_img {
+        width: 100%;
+        border-radius: 15px;
+        min-height: 50vh;
+    }
+
+    .login_form_wrapper {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:480px) {
+    .login_form_wrapper h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .login_form_wrapper p {
+        color: rgba(91, 91, 91, 1);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .login_wrapper {
+        padding: 40px 20px;
+    }
+
+    .login_heading {
+        padding: 35px 20px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .login_form_wrapper h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .login_heading h1 {
+        color: #fff;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .login_heading p {
+        color: #fff;
+        font-size: 15px;
+    }
 }

@@ -462,3 +462,24 @@
     width: 50%;
     z-index: 9;
 }
+@media(max-width:899px){
+    .free_bites_content_wrapper{
+        padding: 40px 0;
+    }
+}
+@media(max-width:850px){
+    .free_bites_content_wrapper{
+        flex-direction: column-reverse;
+    }
+    .free_bites_left25{
+        width: 100%;
+    }
+    .free_bites_right25{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .free_bites_head h1{
+        font-size: 30px;
+    }
+}
