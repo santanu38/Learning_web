@@ -1,114 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/blog.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="../css/checkout.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
-     rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/course.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 </head>
+
 <body>
+    <header class="header" style="background-color: #fff;">
+        <div class="uni-container header-content">
+            <div class="logo">
+                <img src="../../images/Logo.png" alt="Logo" />
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" style="color:#000">Home</a>
+                <a href="course.html" style="color:#000">Courses</a>
+                <a href="blog.html" style="color:#000">Blog</a>
+                <a href="my-courses.html" style="color:#000">My Courses</a>
+            </nav>
+            <div class="right-section">
+                <span class="lang">ENG</span>
+                <button onclick="window.location.href='./login.html'" class="login-btn"
+                    style="border:1px solid #000;padding: 10px 40px;color:#000">Login</button>
+            </div>
+        </div>
+    </header>
     <div class="checkout-page">
         <div class="checkout-contanier uni-container">
-           <div class="checkout-top-content">
-               <div class="checkout-top-left">
-                   <h3 class="check-title">Checkout</h3>
-                   <p class="check-sub-title">Cart Type</p>
-                   <div class="payment-select-div">
-                       <img src="../images/Group 307.png" alt="">
-                       <img src="../images/am_amex_06 1.png" alt="">
-                       <img src="../images/visa.png" alt="">
-                       <img src="../images/Group 307.png" alt="">
-                       <!-- <img src="" alt=""> -->
-                   </div>
-                   <form action="" class="check-out-form">
-                       <label for="">Name on Card</label>
-                       <input type="text"
-                       placeholder="Enter name on Card"
-                       >
-                       <label for="">Card Number</label>
-                       <input type="text"
-                       placeholder="Enter Card Number"
-                       >
-                       <div class="expire-div">
-                           <div class="expire-div-1">
-                               <label for="">Expiration Date ( MM/YY )</label>
-                                <input type="text"
-                                placeholder="Enter Expiration Date"
-                                >
-                           </div>
-                           <div class="expire-div-1">
+            <div class="checkout-top-content">
+                <div class="checkout-top-left">
+                    <h3 class="check-title">Checkout</h3>
+                    <p class="check-sub-title">Cart Type</p>
+                    <div class="payment-select-div">
+                        <img src="../images/Group 307.png" alt="">
+                        <img src="../images/am_amex_06 1.png" alt="">
+                        <img src="../images/visa.png" alt="">
+                        <img src="../images/Group 307.png" alt="">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <form action="" class="check-out-form">
+                        <label for="">Name on Card</label>
+                        <input type="text" placeholder="Enter name on Card">
+                        <label for="">Card Number</label>
+                        <input type="text" placeholder="Enter Card Number">
+                        <div class="expire-div">
+                            <div class="expire-div-1">
+                                <label for="">Expiration Date ( MM/YY )</label>
+                                <input type="text" placeholder="Enter Expiration Date">
+                            </div>
+                            <div class="expire-div-1">
                                 <label for="">CVC</label>
-                                <input type="text"
-                                placeholder="Enter Expiration Date"
-                                >
-                           </div>
-                       </div>
-                      <div class="check-div">
-                         <input type="checkbox">
-                       <p>Save my information for faster checkout</p>
-                      </div>
-                      <button class="confirm-btn">Confirm Payment</button>
-                   </form>
-               </div>
-               <div class="checkout-top-right">
-                       <p>Summary</p>
-                       <div class="course-price-div">
-                           <div class="course-img-wrp">
+                                <input type="text" placeholder="Enter Expiration Date">
+                            </div>
+                        </div>
+                        <div class="check-div">
+                            <input type="checkbox">
+                            <p>Save my information for faster checkout</p>
+                        </div>
+                        <button class="confirm-btn">Confirm Payment</button>
+                    </form>
+                </div>
+                <div class="checkout-top-right">
+                    <p>Summary</p>
+                    <div class="course-price-div">
+                        <div class="course-img-wrp">
                             <img src="../images/loren.png" alt="">
-                             <button class="course-play-btn"><i class="fa-solid fa-play play-cs-icon"></i></button>
-                           </div>
-                           <div class="course-det-wrp">
-                             <span class="intro">Introduction to Ghalib’s Persian Poetry</span>
-                             <span class="desc">Lorem ipsum dollar...</span>
-                             <span class="cd-rice">₹24.69</span>
-                          
-                           </div>
-                       </div>
-                        <div class="course-price-div">
-                           <div class="course-img-wrp">
+                            <button class="course-play-btn"><i class="fa-solid fa-play play-cs-icon"></i></button>
+                        </div>
+                        <div class="course-det-wrp">
+                            <span class="intro">Introduction to Ghalib’s Persian Poetry</span>
+                            <span class="desc">Lorem ipsum dollar...</span>
+                            <span class="cd-rice">₹24.69</span>
+
+                        </div>
+                    </div>
+                    <div class="course-price-div">
+                        <div class="course-img-wrp">
                             <img src="../images/lorem2.png" alt="">
                             <button class="course-play-btn"><i class="fa-solid fa-play play-cs-icon"></i></button>
-                           </div>
-                           <div class="course-det-wrp">
-                             <span class="intro">Introduction to Ghalib’s Persian Poetry</span>
-                             <span class="desc">Lorem ipsum dollar...</span>
-                             <span class="cd-rice">₹24.69</span>
+                        </div>
+                        <div class="course-det-wrp">
+                            <span class="intro">Introduction to Ghalib’s Persian Poetry</span>
+                            <span class="desc">Lorem ipsum dollar...</span>
+                            <span class="cd-rice">₹24.69</span>
 
-                           </div>
-                       </div>
-                       <div class="sub-total">
-                         <span>Subtotal</span>'
-                         <span>₹51.38</span>
-                       </div>
-                        <div class="sub-total">
-                         <span>Coupon Discount</span>'
-                         <span>0 %</span>
-                       </div>
-                        <div class="sub-total">
-                         <span>TAX</span>'
-                         <span>5</span>
-                       </div>
-                        <div class="total-price">
-                         <span>Total</span>'
-                         <span>₹56.38</span>
-                       </div>
+                        </div>
+                    </div>
+                    <div class="sub-total">
+                        <span>Subtotal</span>'
+                        <span>₹51.38</span>
+                    </div>
+                    <div class="sub-total">
+                        <span>Coupon Discount</span>'
+                        <span>0 %</span>
+                    </div>
+                    <div class="sub-total">
+                        <span>TAX</span>'
+                        <span>5</span>
+                    </div>
+                    <div class="total-price">
+                        <span>Total</span>'
+                        <span>₹56.38</span>
+                    </div>
 
-               </div>
-           </div>
-           <div class="checkout-bottom-content  ">
-               <div class="courses-header-st" style="margin-top: 60px;">
+                </div>
+            </div>
+            <div class="checkout-bottom-content  ">
+                <div class="courses-header-st" style="margin-top: 60px;">
                     <img src="./images/Ellipse 19.png" class="Ellipse_img7963" />
-                    <h1 id="recommended_head"> <img src="images/Vector_1.png" style="width: 50%;" alt="" class="underline-vec ">Top Offers Urdu
+                    <h1 id="recommended_head"> <img src="images/Vector_1.png" style="width: 50%;" alt=""
+                            class="underline-vec ">Top Offers Urdu
                     </h1>
                     <a href="#" class="view-all-st">View All</a>
-               </div>
-               <div class="courses-container-st" style="position: relative;">
+                </div>
+                <div class="courses-container-st" style="position: relative;">
                     <!-- Course Card 1 -->
                     <div class="course-card-st">
                         <div class="course-img-st">
@@ -117,12 +138,14 @@
                         </div>
                         <div class="course-content-st">
                             <h3>Spoken Urdu: Common Phrases,Expressions and Vocabulary</h3>
-                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the greatest
+                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the
+                                greatest
                                 Persian poets.
                             </p>
                             <div class="course-meta-st">
                                 <span>⏱ 6 hrs Learning</span>
-                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19 Lessons</span>
+                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19
+                                    Lessons</span>
                             </div>
                             <div class="course-footer-st">
                                 <button class="learn-more-st">Learn More</button>
@@ -142,12 +165,14 @@
                         </div>
                         <div class="course-content-st">
                             <h3>Alfazz Part 1 : Learning the UrduVocabulaty</h3>
-                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the greatest
+                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the
+                                greatest
                                 Persian poets.
                             </p>
                             <div class="course-meta-st">
                                 <span>⏱ 6 hrs Learning</span>
-                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19 Lessons</span>
+                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19
+                                    Lessons</span>
                             </div>
                             <div class="course-footer-st">
                                 <button class="learn-more-st">Learn More</button>
@@ -167,12 +192,14 @@
                         </div>
                         <div class="course-content-st">
                             <h3>Alfazz Part II: Learning the Urdu Vocabulary</h3>
-                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the greatest
+                            <p>Discover the world of Ghalib’s Persian poetry that shaped his legacy as one of the
+                                greatest
                                 Persian poets.
                             </p>
                             <div class="course-meta-st">
                                 <span>⏱ 6 hrs Learning</span>
-                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19 Lessons</span>
+                                <span class="book-st"><img src="images/lucide_book.png" alt="" class="book-i"> 19
+                                    Lessons</span>
                             </div>
                             <div class="course-footer-st">
                                 <button class="learn-more-st">Learn More</button>
@@ -183,10 +210,11 @@
                             </div>
                         </div>
                     </div>
-               </div>
-             
-           </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
+
 </html>
