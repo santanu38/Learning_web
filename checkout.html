@@ -23,6 +23,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </head>
 
 <body>
+
+    <div class="course_modal_booking_wrappper not_active">
+        <div class="course_modal_booking_div" onclick="event.stopPropagation()">
+            <img src="./images/Group 1171276993.png" />
+            <h4>Your course has been successfully booked!</h4>
+            <h6>We’ve sent you a confirmation email with the details.</h6>
+            <div class="star_rating_wrapper4566">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <button id="done_btn">Done</button>
+        </div>
+    </div>
+
+
     <header class="header" style="background-color: #fff;">
         <div class="uni-container header-content">
             <div class="logo">
@@ -73,7 +91,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             <input type="checkbox">
                             <p>Save my information for faster checkout</p>
                         </div>
-                        <button class="confirm-btn">Confirm Payment</button>
+                        <button class="confirm-btn" id="confirm_btn">Confirm Payment</button>
                     </form>
                 </div>
                 <div class="checkout-top-right">
@@ -215,6 +233,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </div>
+    <script>
+        const confirmBtn = document.getElementById('confirm_btn');
+        const modalWrapper = document.querySelector('.course_modal_booking_wrappper');
+        const doneBtn = document.getElementById('done_btn')
+
+        confirmBtn.addEventListener('click', ((e) => {
+            modalWrapper.classList.remove('not_active')
+            modalWrapper.classList.add('active')
+            e.preventDefault()
+        }))
+
+        modalWrapper.addEventListener('click', ((e) => {
+            modalWrapper.classList.add('not_active');
+            modalWrapper.classList.remove('active')
+        }))
+
+        doneBtn.addEventListener('click', ((e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            modalWrapper.classList.add('not_active');
+            modalWrapper.classList.remove('active');
+            window.location.href='./CourseFullVideo.html'
+        }))
+
+    </script>
 </body>
 
 </html>
