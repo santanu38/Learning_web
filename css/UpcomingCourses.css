@@ -1,0 +1,40 @@
+.calendar-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: 250px;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    /* Customize Flatpickr calendar */
+    .flatpickr-calendar {
+      border-radius: 16px !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .flatpickr-month {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .flatpickr-day.selected {
+      background: #4b0082 !important;
+      border-color: #4b0082 !important;
+      color: #fff !important;
+    }
+
+    .flatpickr-day:hover {
+      background: #ede6ff !important;
+    }
+    .calender-overview-wrp{
+        display: flex;
+        gap:10px;
+        padding: 14px;
+    }
