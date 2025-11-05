@@ -1,22 +1,20 @@
 .calendar-container {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     
+   
+      
     }
 
-    input[type="text"] {
-      width: 250px;
-      padding: 10px 14px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
+    
+.calender-left-div{
+  
+}
+
 
     /* Customize Flatpickr calendar */
     .flatpickr-calendar {
       border-radius: 16px !important;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+     
     }
 
     .flatpickr-month {
@@ -38,3 +36,167 @@
         gap:10px;
         padding: 14px;
     }
+    .over-title{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .img-view-div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .view-det-p{
+      font-size: 8px;
+    }
+    .time-p{
+      font-size: 8px;
+    }
+    .join-now-div-wrap{
+      margin-top: 14px;
+     background: #e9e2ff;
+     padding: 8px 4px;
+     border-radius: 4px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .desc-img{
+  width: 12px;
+  height: 12px;
+}
+.ghalib-title{
+  font-size: 10px;
+
+}
+.join-bottom-div{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px;
+  margin-top: 4px;
+  width: 80%;
+}
+.design-p{
+  font-size: 10px;
+}
+.op-img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.join-bottom-div-wrp{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+.join-btn-bt{
+  background: #2f2483;
+  color: #fff;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 14px;
+  font-size: 10px;
+}
+
+@media (max-width: 991px) {
+  .calender-overview-wrp {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .join-bottom-div {
+    width: 90%;
+  }
+
+  .ghalib-title,
+  .design-p {
+    font-size: 12px;
+  }
+
+  .view-det-p,
+  .time-p {
+    font-size: 9px;
+  }
+
+  .op-img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .join-btn-bt {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .calender-overview-wrp {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .join-bottom-div {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .ghalib-title {
+    font-size: 11px;
+  }
+
+  .design-p {
+    font-size: 11px;
+  }
+
+  .view-det-p,
+  .time-p {
+    font-size: 9px;
+  }
+
+  .op-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .join-btn-bt {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .calender-overview-wrp {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .join-bottom-div {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .ghalib-title,
+  .design-p {
+    font-size: 10px;
+  }
+
+  .view-det-p,
+  .time-p {
+    font-size: 8px;
+  }
+
+  .op-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .join-btn-bt {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}

@@ -168,3 +168,113 @@
 .btn-bg-purple i{
     font-size: 11px;
 }
+
+
+@media (max-width: 992px) {
+  .fill-up-container {
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+
+  .fill-up-left,
+  .fill-up-right {
+    width: 100%;
+  }
+
+  .fill-right-head h1 {
+    font-size: 28px;
+  }
+
+  .head-bottom p {
+    font-size: 16px;
+  }
+
+  .fill-up-form {
+    padding: 20px;
+  }
+
+  .fill-up-btn {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .fill-up-container {
+    padding: 20px 12px;
+  }
+
+  .fill-up-left-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .lesson-div {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .lesson-div img {
+    width: 18px;
+  }
+
+  .fil-up-lesson {
+    font-size: 13px;
+  }
+
+  .fil-up-dur {
+    font-size: 13px;
+  }
+
+  .fill-right-head h1 {
+    font-size: 22px;
+  }
+
+  .head-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .fill-up-form {
+    gap: 10px;
+  }
+
+  .time-input-div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time-input-div-1 {
+    width: 100%;
+  }
+
+  .fill-up-btn {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .fill-right-head h1 {
+    font-size: 18px;
+  }
+
+  .over-p {
+    font-size: 13px;
+  }
+
+  .fill-up-form label {
+    font-size: 12px;
+  }
+
+  .fill-up-form input,
+  select {
+    font-size: 13px;
+    padding: 6px;
+  }
+}

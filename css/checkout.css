@@ -196,3 +196,121 @@
 .active{
    display: flex;
 }
+
+@media (max-width: 992px) {
+  .checkout-top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-top-left,
+  .checkout-top-right {
+    width: 90%;
+  }
+
+  .checkout-top-right {
+    margin-top: 30px;
+  }
+
+  .course-img-wrp {
+    width: 100px;
+    height: 60px;
+  }
+
+  .confirm-btn {
+    width: 100%;
+  }
+
+  .check-title {
+    font-size: 22px;
+  }
+
+  .check-out-form input {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .checkout-top-content {
+    gap: 20px;
+  }
+
+  .checkout-top-left,
+  .checkout-top-right {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .payment-select-div img {
+    width: 60px;
+  }
+
+  .check-title {
+    font-size: 20px;
+  }
+
+  .check-out-form label {
+    font-size: 13px;
+  }
+
+  .expire-div {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .check-div p {
+    font-size: 12px;
+  }
+
+  .course-img-wrp {
+    width: 90px;
+    height: 60px;
+  }
+
+  .course-det-wrp span {
+    font-size: 12px;
+  }
+
+  .sub-total span,
+  .total-price span {
+    font-size: 13px;
+  }
+
+  .checkout-bottom-content {
+    padding: 30px 0;
+  }
+
+  .confirm-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .check-title {
+    font-size: 18px;
+  }
+
+  .check-out-form input {
+    font-size: 12px;
+  }
+
+  .confirm-btn {
+    font-size: 13px;
+  }
+
+  .course-img-wrp {
+    width: 80px;
+    height: 50px;
+  }
+
+  .course-det-wrp span {
+    font-size: 11px;
+  }
+
+  .payment-select-div img {
+    width: 50px;
+  }
+}
