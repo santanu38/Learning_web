@@ -1,139 +1,162 @@
-
-.checkout-page{
+.checkout-page {
    margin-top: 40px;
 
 }
-.checkout-top-content{
+
+.checkout-top-content {
    display: flex;
    gap: 40px;
    justify-content: space-between;
 }
-.checkout-top-left{
+
+.checkout-top-left {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
    padding: 8px 26px;
    width: 50%;
 }
-.check-sub-title{
+
+.check-sub-title {
    font-size: 14px;
 }
-.payment-select-div{
+
+.payment-select-div {
    display: flex;
    align-items: center;
    gap: 14px;
 }
-.payment-select-div img{
-    width: 90px;
+
+.payment-select-div img {
+   width: 90px;
 }
-.check-out-form{
+
+.check-out-form {
    display: flex;
    flex-direction: column;
    gap: 10px;
    margin-top: 40px;
 }
-.check-out-form input{
+
+.check-out-form input {
    padding: 8px;
    border: 1px solid #D9D9D9;
    border-radius: 4px;
 }
-.check-out-form label{
+
+.check-out-form label {
    font-size: 14px;
 }
-.expire-div{
+
+.expire-div {
    display: flex;
    gap: 16px;
 
 }
-.expire-div-1{
+
+.expire-div-1 {
    display: flex;
    flex-direction: column;
    gap: 10px;
 }
-.check-div{
+
+.check-div {
    display: flex;
    gap: 10px;
 }
-.confirm-btn{
+
+.confirm-btn {
    background: #2f2483;
    color: #fff;
    border: none;
-   padding: 12px ;
+   padding: 12px;
    border-radius: 4px;
    margin-bottom: 20px;
 }
-.checkout-top-right{
+
+.checkout-top-right {
    background: #efedfe;
    width: 35%;
    padding: 8px 24px;
    border-radius: 8px;
    height: 450px;
 }
-.course-price-div{
+
+.course-price-div {
    display: flex;
    gap: 12px;
    border-bottom: 1px solid #5B5B5B;
    padding: 12px 0px;
 }
-.course-img-wrp{
-    position: relative;
-    width: 120px;
-    height: 70px;
+
+.course-img-wrp {
+   position: relative;
+   width: 120px;
+   height: 70px;
 }
-.course-play-btn{
+
+.course-play-btn {
    position: absolute;
    left: 50%;
    top: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  border: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #fff;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   border: none;
 }
-.play-cs-icon{
+
+.play-cs-icon {
    color: #2f2483;
    font-size: 10px;
 }
-.course-img-wrp img{
+
+.course-img-wrp img {
    width: 100%;
    height: 100%;
    border-radius: 8px;
 }
-.course-det-wrp{
-   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
-  font-family: "Roboto",sans-serif;
+.course-det-wrp {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   font-family: "Roboto", sans-serif;
 }
-.intro{
+
+.intro {
    font-size: 14px;
-  
+
 }
-.desc{
+
+.desc {
    color: #5B5B5B;
    font-size: 14px;
 }
-.sub-total{
+
+.sub-total {
    display: flex;
    justify-content: space-between;
    padding: 12px 0px;
    border-bottom: 1px solid #5B5B5B;
    color: #5B5B5B;
 }
-.total-price{
-  display: flex;
+
+.total-price {
+   display: flex;
    justify-content: space-between;
    padding: 12px 0px;
    border-bottom: 1px solid #5B5B5B;
-  
-}
-.checkout-bottom-content{
- padding: 50px 0px;
+
 }
 
-.course_modal_booking_wrappper{
+.checkout-bottom-content {
+   padding: 50px 0px;
+}
+
+.course_modal_booking_wrappper {
    width: 100%;
    height: 100vh;
    z-index: 999;
@@ -142,10 +165,11 @@
    top: 0;
    left: 0;
    display: flex;
-   justify-content:center ;
+   justify-content: center;
    align-items: center;
 }
-.course_modal_booking_div{
+
+.course_modal_booking_div {
    width: 700px;
    border-radius: 20px;
    background-color: #fff;
@@ -158,16 +182,20 @@
    align-items: center;
    gap: 30px;
 }
-.course_modal_booking_div img{
+
+.course_modal_booking_div img {
    width: 250px;
 }
-.course_modal_booking_div h4{
+
+.course_modal_booking_div h4 {
    font-size: 25px;
 }
-.course_modal_booking_div h6{
+
+.course_modal_booking_div h6 {
    font-size: 15px;
 }
-.star_rating_wrapper4566{
+
+.star_rating_wrapper4566 {
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -175,10 +203,12 @@
    font-size: 22px;
    color: #2F2483;
 }
-.star_rating_wrapper4566 i:last-child{
+
+.star_rating_wrapper4566 i:last-child {
    color: #5B5B5B;
 }
-.course_modal_booking_div button{
+
+.course_modal_booking_div button {
    width: 300px;
    display: block;
    margin-inline: auto;
@@ -190,127 +220,158 @@
    background-color: #2F2483;
    color: #fff;
 }
-.not_active{
+
+.not_active {
    display: none;
 }
-.active{
+
+.active {
    display: flex;
 }
 
 @media (max-width: 992px) {
-  .checkout-top-content {
-    flex-direction: column;
-    align-items: center;
-  }
+   .checkout-top-content {
+      flex-direction: column;
+      align-items: center;
+   }
 
-  .checkout-top-left,
-  .checkout-top-right {
-    width: 90%;
-  }
+   .checkout-top-left,
+   .checkout-top-right {
+      width: 90%;
+   }
 
-  .checkout-top-right {
-    margin-top: 30px;
-  }
+   .checkout-top-right {
+      margin-top: 30px;
+   }
 
-  .course-img-wrp {
-    width: 100px;
-    height: 60px;
-  }
+   .course-img-wrp {
+      width: 100px;
+      height: 60px;
+   }
 
-  .confirm-btn {
-    width: 100%;
-  }
+   .confirm-btn {
+      width: 100%;
+   }
 
-  .check-title {
-    font-size: 22px;
-  }
+   .check-title {
+      font-size: 22px;
+   }
 
-  .check-out-form input {
-    font-size: 13px;
-  }
+   .check-out-form input {
+      font-size: 13px;
+   }
 }
 
+@media(max-width:768px) {
+   .course_modal_booking_div {
+      width: 95%;
+      padding: 40px;
+   }
+
+   .course_modal_booking_div h4 {
+      text-align: center;
+   }
+
+   .course_modal_booking_div h6 {
+      text-align: center;
+   }
+}
 
 @media (max-width: 600px) {
-  .checkout-top-content {
-    gap: 20px;
-  }
+   .course_modal_booking_div button {
+      width: 150px;
+   }
 
-  .checkout-top-left,
-  .checkout-top-right {
-    width: 100%;
-    padding: 16px;
-  }
+   .checkout-top-content {
+      gap: 20px;
+   }
 
-  .payment-select-div img {
-    width: 60px;
-  }
+   .checkout-top-left,
+   .checkout-top-right {
+      width: 100%;
+      padding: 16px;
+   }
 
-  .check-title {
-    font-size: 20px;
-  }
+   .payment-select-div img {
+      width: 60px;
+   }
 
-  .check-out-form label {
-    font-size: 13px;
-  }
+   .check-title {
+      font-size: 20px;
+   }
 
-  .expire-div {
-    flex-direction: column;
-    gap: 12px;
-  }
+   .check-out-form label {
+      font-size: 13px;
+   }
 
-  .check-div p {
-    font-size: 12px;
-  }
+   .expire-div {
+      flex-direction: column;
+      gap: 12px;
+   }
 
-  .course-img-wrp {
-    width: 90px;
-    height: 60px;
-  }
+   .check-div p {
+      font-size: 12px;
+   }
 
-  .course-det-wrp span {
-    font-size: 12px;
-  }
+   .course-img-wrp {
+      width: 90px;
+      height: 60px;
+   }
 
-  .sub-total span,
-  .total-price span {
-    font-size: 13px;
-  }
+   .course-det-wrp span {
+      font-size: 12px;
+   }
 
-  .checkout-bottom-content {
-    padding: 30px 0;
-  }
+   .sub-total span,
+   .total-price span {
+      font-size: 13px;
+   }
 
-  .confirm-btn {
-    padding: 10px;
-    font-size: 14px;
-  }
+   .checkout-bottom-content {
+      padding: 30px 0;
+   }
+
+   .confirm-btn {
+      padding: 10px;
+      font-size: 14px;
+   }
 }
 
+@media(max-width:480px) {
+   .course_modal_booking_div img {
+      width: 150px;
+   }
+   .course_modal_booking_div{
+      padding: 10px;
+   }
+}
 
 @media (max-width: 400px) {
-  .check-title {
-    font-size: 18px;
-  }
+   .check-title {
+      font-size: 18px;
+   }
 
-  .check-out-form input {
-    font-size: 12px;
-  }
+   .check-out-form input {
+      font-size: 12px;
+   }
 
-  .confirm-btn {
-    font-size: 13px;
-  }
+   .confirm-btn {
+      font-size: 13px;
+   }
 
-  .course-img-wrp {
-    width: 80px;
-    height: 50px;
-  }
+   .course-img-wrp {
+      width: 80px;
+      height: 50px;
+   }
 
-  .course-det-wrp span {
-    font-size: 11px;
-  }
+   .course-det-wrp span {
+      font-size: 11px;
+   }
 
-  .payment-select-div img {
-    width: 50px;
-  }
+   .payment-select-div img {
+      width: 50px;
+   }
+   .course_modal_booking_div h4{
+      font-size: 20px;
+   }
 }
