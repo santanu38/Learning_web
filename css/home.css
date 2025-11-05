@@ -991,7 +991,7 @@
 .pricing {
   background: #fafafa;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 0px;
 }
 
 .pricing-cards {
@@ -1546,8 +1546,18 @@ button:hover {
   .course-card-st {
     width: 48%;
   }
-  .courses-header-st h1{
+
+  .courses-header-st h1 {
     font-size: 30px;
+  }
+  .courses-header-st {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+  }
+  .view-all-st{
+    margin-left: auto;
   }
 }
 
@@ -1595,12 +1605,27 @@ button:hover {
 }
 
 @media(max-width:480px) {
+  .hero-buttons {
+    flex-direction: column;
+
+  }
+
+  .join-btn {
+    width: 100%;
+  }
+
+  .watch-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .course-left h1 {
     font-size: 30px;
   }
 
   .courses-header-st h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .structured-right h2 {
@@ -1610,16 +1635,19 @@ button:hover {
   .section-title {
     font-size: 30px;
   }
-  .know_driven_content h1{
+
+  .know_driven_content h1 {
     font-size: 30px;
   }
-  .free_bites_left{
+
+  .free_bites_left {
     padding: 20px 20px;
   }
+
   .know_driven_content h5 {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
     line-height: 35px;
-}
+  }
 }

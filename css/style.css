@@ -208,4 +208,7 @@ body {
   .footer_2{
     width: 100%;
   }
+  .header .logo img{
+    width: 40px;
+  }
 }
