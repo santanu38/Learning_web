@@ -1,0 +1,129 @@
+.student_header_wrapper {
+    background-color: #B7AFF3;
+}
+.student_header_wrapper th {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    ;
+    text-align: left;
+}
+.student_table td {
+    padding: 15px 30px;
+    font-size: 13px;
+    word-wrap: break-word;
+    vertical-align: top;
+    border-bottom: 1px solid #000;
+}
+
+.student_header_wrapper th:nth-child(1) {
+    border-radius: 10px 0 0 0;
+}
+
+.student_header_wrapper th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.student_table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+}
+
+.student_list_table_container {
+    width: 100%;
+    overflow-x: auto;
+}
+.student_name_wrapper788{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.student_name_wrapper788 img{
+    width: 30px;
+    min-width: 30px ;
+    border-radius: 50%;
+}
+.student_name_wrapper788 h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+.student_name_wrapper788 p{
+    font-size: 10px;
+    color: #848484;
+}
+.student_list_wrapper{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.date_para7889{
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #EAE9F2;
+}
+.student_list_wrapper_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+.student_list_wrapper_head h3{
+    font-weight: 500;
+    
+}
+.student_list_search_wrapper{
+    position: relative;
+}
+.student_list_wrapper_head input{
+  width: 400px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 10px 0 40px;
+  font-size: 13px;
+  outline: none;
+  background-color: #F7F8FA;
+}
+.student_list_search_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.student_list_search_wrapper .fa-magnifying-glass{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #919495;
+    font-size: 12px;
+}
+.student_list_search_wrapper .fa-bars-staggered{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F2483;
+    border-radius: 50%;
+}
+.student_list_search_wrapper .fa-plus{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F2483;
+    border-radius: 50%;
+}
