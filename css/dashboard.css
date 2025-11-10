@@ -1063,3 +1063,214 @@
     font-weight: 600;
     color: #464255;
 }
+
+
+
+/* responcive screen */
+
+
+@media (max-width: 1300px) {
+
+  .sidebar_wrapper2 {
+    width: 200px;
+  }
+
+  .center_layout {
+    width: calc(100% - 200px);
+    padding: 20px;
+  }
+
+  .dashboard_cards_wrapper {
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .dashboard_card,
+  .dashboard_card_2,
+  .dashboard_card_3,
+  .dashboard_card_4 {
+    width: 78%;
+  }
+
+  .students-attendance-chart-wrp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .attendance-chart-wrp,
+  .students-chart-wrp {
+    width: 100%;
+  }
+
+  .task-assignment-wrp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .assignment-chart-wrp,
+  .task-table-wrp {
+    width: 100%;
+  }
+
+  .activity-notice-mssg-wrp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .activity-card-st,
+  .notice-board-nb,
+  .messages-container-sg {
+    width: 100%;
+  }
+
+  .dashboard_calendar_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .dashboard_cards_wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 905px) {
+  .dashboard_cards_wrapper {
+    width: 100%;
+  }
+   .dashboard_calendar_wrapper {
+    width: 80%;
+  }
+  .calendar-container{
+    width: 50px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .dashboard_container {
+    flex-direction: column;
+  }
+
+  .sidebar_wrapper2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .sidebar_links {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .center_layout {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .dahsboard_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dashboard_input_wrapper {
+    width: 100%;
+  }
+
+   {
+    flex-direction: column;
+  }
+
+  .dashboard_card,
+  .dashboard_card_2,
+  .dashboard_card_3,
+  .dashboard_card_4 {
+    width: 100%;
+  }
+
+  .students-attendance-chart-wrp,
+  .task-assignment-wrp,
+  .activity-notice-mssg-wrp {
+    flex-direction: column;
+  }
+
+  .students-chart-wrp,
+  .attendance-chart-wrp,
+  .assignment-chart-wrp,
+  .task-table-wrp,
+  .activity-card-st,
+  .notice-board-nb,
+  .messages-container-sg {
+    width: 100%;
+  }
+
+  .dashboard_notification_wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .user_name_wrapper p {
+    font-size: 11px;
+  }
+
+  .bell_wrapper {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .dashboard_input_wrapper input {
+    font-size: 10px;
+    padding: 0 12px;
+  }
+
+  .dashboard_card h2 {
+    font-size: 20px;
+  }
+
+  .dashboard_card h4 {
+    font-size: 14px;
+  }
+
+  .dashboard_percentage p {
+    font-size: 10px;
+  }
+
+  .sidebar_links p {
+    font-size: 12px;
+  }
+
+  .dashboard_notification_wrapper img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .notice-item-nb {
+    grid-template-columns: 45px 1fr;
+    gap: 10px;
+  }
+
+  .notice-date-nb,
+  .notice-views-nb,
+  .notice-author-nb {
+    display: none;
+  }
+
+  .activity-time-st {
+    width: auto;
+    font-size: 10px;
+  }
+
+  .message-item-sg {
+    grid-template-columns: 40px 1fr;
+  }
+}
