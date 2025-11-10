@@ -1292,7 +1292,6 @@ button:hover {
 .sidebar_not_active {
   transform: translateX(-100%);
   transition: 0.2s linear all;
-
 }
 
 .sidebar_wrapper a {

@@ -1,6 +1,7 @@
 .student_header_wrapper {
     background-color: #B7AFF3;
 }
+
 .student_header_wrapper th {
     padding: 10px 30px;
     font-size: 14px;
@@ -8,6 +9,7 @@
     ;
     text-align: left;
 }
+
 .student_table td {
     padding: 15px 30px;
     font-size: 13px;
@@ -34,76 +36,89 @@
     width: 100%;
     overflow-x: auto;
 }
-.student_name_wrapper788{
+
+.student_name_wrapper788 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
-.student_name_wrapper788 img{
+
+.student_name_wrapper788 img {
     width: 30px;
-    min-width: 30px ;
+    min-width: 30px;
     border-radius: 50%;
 }
-.student_name_wrapper788 h3{
+
+.student_name_wrapper788 h3 {
     font-size: 12px;
     font-weight: 400;
 }
-.student_name_wrapper788 p{
+
+.student_name_wrapper788 p {
     font-size: 10px;
     color: #848484;
 }
-.student_list_wrapper{
+
+.student_list_wrapper {
     padding: 20px;
     background-color: #fff;
     margin-top: 15px;
     border-radius: 10px;
     position: relative;
 }
-.date_para7889{
+
+.date_para7889 {
     padding: 5px 5px;
     border-radius: 15px;
     font-size: 10px;
     text-align: center;
     background-color: #EAE9F2;
 }
-.student_list_wrapper_head{
+
+.student_list_wrapper_head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0 20px 0;
 }
-.student_list_wrapper_head h3{
+
+.student_list_wrapper_head h3 {
     font-weight: 500;
-    
+
 }
-.student_list_search_wrapper{
+
+.student_list_search_wrapper {
     position: relative;
 }
-.student_list_wrapper_head input{
-  width: 400px;
-  height: 35px;
-  border-radius: 15px;
-  border: none;
-  padding: 0 10px 0 40px;
-  font-size: 13px;
-  outline: none;
-  background-color: #F7F8FA;
+
+.student_list_wrapper_head input {
+    width: 400px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px 0 40px;
+    font-size: 13px;
+    outline: none;
+    background-color: #F7F8FA;
 }
+
 .student_list_search_wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
-.student_list_search_wrapper .fa-magnifying-glass{
+
+.student_list_search_wrapper .fa-magnifying-glass {
     position: absolute;
     top: 10px;
     left: 10px;
     color: #919495;
     font-size: 12px;
 }
-.student_list_search_wrapper .fa-bars-staggered{
+
+.student_list_search_wrapper .fa-bars-staggered {
     color: #fff;
     width: 30px;
     height: 30px;
@@ -115,7 +130,8 @@
     background-color: #2F2483;
     border-radius: 50%;
 }
-.student_list_search_wrapper .fa-plus{
+
+.student_list_search_wrapper .fa-plus {
     color: #fff;
     width: 30px;
     height: 30px;
@@ -126,4 +142,109 @@
     border-radius: 5px;
     background-color: #2F2483;
     border-radius: 50%;
+}
+
+.student_table20 td {
+    vertical-align: middle !important;
+}
+
+.student_table20 td img {
+    width: 40px;
+}
+
+.assignment_input_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 32%;
+}
+
+.assignment_input_wrapper label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.assignment_input_wrapper input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: none;
+}
+.assignment_input_wrapper select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: none;
+}
+
+
+.assignment_input_wrapper textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    resize: none;
+}
+
+.add_assignment_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.batch_wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.batch_wrapper h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.submit_button78999 {
+    width: 200px;
+    height: 45px;
+    display: block;
+    margin-left: auto;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #2F2483;
+    font-size: 15px;
+}
+
+.input_upload_wrapper {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.input_upload_wrapper input {
+    opacity: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+}
+.input_upload_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-size: 13px;
 }
