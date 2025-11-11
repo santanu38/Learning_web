@@ -1466,7 +1466,7 @@
   .dashboard_notification_wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0px;
     width: 100%;
   }
 }
