@@ -17,6 +17,14 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
+}
+
+
+
+.sidebar2_active {
+  transform: translateX(0%);
+  transition: 0.2s linear all;
 }
 
 .center_layout {
@@ -126,7 +134,8 @@
   align-items: center;
   flex-direction: column;
 }
-.sidebar_wrapper2 .icons{
+
+.sidebar_wrapper2 .icons {
   position: relative;
   top: -80px;
   right: -80px;
@@ -1119,14 +1128,16 @@
   font-weight: 600;
   color: #464255;
 }
- .sidebar_active{
+
+.sidebar_active {
   transform: translateX(0);
   transition: 0.2s ease-in-out;
- }
- .sidebar_not_active{
+}
+
+.sidebar_not_active {
   transform: translateX(-100%);
   transition: 0.2s ease-in-out;
- }
+}
 
 
 /* responcive screen */
@@ -1210,11 +1221,12 @@
     width: 100% !important;
     min-width: 100% !important;
   }
-  .dashboard_calendar_wrapper .flatpickr-calendar.inline{
+
+  .dashboard_calendar_wrapper .flatpickr-calendar.inline {
     width: 100% !important;
     min-width: 100% !important;
   }
- 
+
 }
 
 /* @media (max-width: 1060px) {
@@ -1222,20 +1234,27 @@
     width: 100%;
   }
 } */
-@media(max-width:1000px){
-  .dashboard_content_wrapper_main{
+@media(max-width:1000px) {
+  .dashboard_content_wrapper_main {
     flex-wrap: wrap;
   }
-  .dashboard_cards_wrapper{
+
+  .dashboard_cards_wrapper {
     width: 100%;
   }
-  .dashboard_card, .dashboard_card_2, .dashboard_card_3, .dashboard_card_4{
-    width:48% ;
+
+  .dashboard_card,
+  .dashboard_card_2,
+  .dashboard_card_3,
+  .dashboard_card_4 {
+    width: 48%;
   }
-  .dashboard_cards_graps_wrp{
+
+  .dashboard_cards_graps_wrp {
     width: 100%;
   }
-  .students-attendance-chart-wrp #attendanceChart{
+
+  .students-attendance-chart-wrp #attendanceChart {
     width: 100% !important;
   }
 }
@@ -1244,27 +1263,35 @@
   .dashboard_cards_wrapper {
     width: 100%;
   }
-  .center_layout{
+
+  .center_layout {
     width: 100%;
     margin: 0px;
     padding: 20px;
-   
+
   }
- .dahsboard_header {
+
+  .sidebar2_not_active {
+    transform: translateX(-100%);
+    transition: 0.2s linear all;
+  }
+
+  .dahsboard_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 60px;
-}
-/* .bar_icon{
+  }
+
+  /* .bar_icon{
     visibility: visible;
   } */
 
-      .dashboard_calendar_wrapper  .flatpickr-calendar animate .inline {
-        width: 90% !important;
-        min-width: 90% !important;
-        padding: 0 5%;
-    }
+  .dashboard_calendar_wrapper .flatpickr-calendar animate .inline {
+    width: 90% !important;
+    min-width: 90% !important;
+    padding: 0 5%;
+  }
 }
 
 
@@ -1275,7 +1302,8 @@
   .dashboard_container {
     flex-direction: column;
   }
-/* 
+
+  /* 
   .sidebar_wrapper2 {
     position: relative;
     width: 100%;
@@ -1294,17 +1322,17 @@
   .center_layout {
     width: 100%;
     position: relative;
-  
+
     margin: 0;
     padding: 15px;
   }
 
-    .dahsboard_header {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 95%;
-        gap: 10px;
-    }
+  .dahsboard_header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    gap: 10px;
+  }
 
   .dashboard_input_wrapper {
     width: 105%;
@@ -1349,7 +1377,7 @@
   .bell_wrapper {
     font-size: 18px;
   }
- 
+
 }
 
 
@@ -1399,28 +1427,32 @@
   .message-item-sg {
     grid-template-columns: 40px 1fr;
   }
- .dashboard_notification_wrapper {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 30px;
-        width: 100%;
-    }
-        .dahsboard_header {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 95%;
-    }
+
+  .dashboard_notification_wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .dahsboard_header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+  }
 }
+
 @media (max-width: 376px) {
-     .dahsboard_header {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 95%;
-    }
-    .dashboard_notification_wrapper {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-        width: 100%;
-    }
+  .dahsboard_header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+  }
+
+  .dashboard_notification_wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
 }

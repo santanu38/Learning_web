@@ -24,9 +24,10 @@
 
 <body class="body_class">
     <div class="dashboard_container">
-        <div class="sidebar_wrapper2  ">
+        <div class="sidebar_wrapper2 sidebar2_not_active">
             <img src="./images/Logo.png" />
-            <i class="fa-solid fa-angle-left cutbutton"></i>
+            <i class="fa-solid fa-caret-left" style="position: absolute;top: 0;
+            right: 0;font-size: 25px;" id="caret_id"></i>
             <div class="sidebar_links">
 
                 <a href="" class="sidebar_link_wrapper">
@@ -88,8 +89,8 @@
                         <p><span>Hello,</span> Trishit</p>
                         <img src="./images/image (9).png" />
                     </div>
-                    <div >
-                        <i class="fa-solid fa-bars menu " onclick="handleChange()"></i>
+                    <div>
+                        <i class="fa-solid fa-bars" id="dashboard_menu_bar"></i>
                     </div>
                 </div>
 
@@ -147,60 +148,60 @@
                             </div>
                         </div>
                         <div class="students-attendance-chart-wrp">
-                             <div class="students-chart-wrp">
+                            <div class="students-chart-wrp">
                                 <div class="student-chart-head">
-                                  <h3>Students</h3>
-                                  <div class="round-circle-div">
-                                    <div class="cirle-st"></div>
-                                    <div class="cirle-st"></div>
-                                    <div class="cirle-st"></div>
-                                 </div>
-                                  </div>
-                                  <div class="chart-container">
-                                     <canvas id="studentsChart"></canvas>
-                                  </div>
-                                   <div class="legend">
-                                        <div>
-                                            <div class="dot boys-dot"></div>
-                                            <div class="number">45.414</div>
-                                            <div class="percentage">Boys (47%)</div>
-                                        </div>
-                                        <div>
-                                            <div class="dot girls-dot"></div>
-                                            <div class="number">40.270</div>
-                                            <div class="percentage">Girls (53%)</div>
-                                        </div>
+                                    <h3>Students</h3>
+                                    <div class="round-circle-div">
+                                        <div class="cirle-st"></div>
+                                        <div class="cirle-st"></div>
+                                        <div class="cirle-st"></div>
                                     </div>
-                             </div>
-                             <div class="attendance-chart-wrp">
-                                   <div class="attendance-header">
+                                </div>
+                                <div class="chart-container">
+                                    <canvas id="studentsChart"></canvas>
+                                </div>
+                                <div class="legend">
+                                    <div>
+                                        <div class="dot boys-dot"></div>
+                                        <div class="number">45.414</div>
+                                        <div class="percentage">Boys (47%)</div>
+                                    </div>
+                                    <div>
+                                        <div class="dot girls-dot"></div>
+                                        <div class="number">40.270</div>
+                                        <div class="percentage">Girls (53%)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="attendance-chart-wrp">
+                                <div class="attendance-header">
                                     <h2>Attendance</h2>
                                     <div class="dropdowns">
                                         <select>
-                                        <option>Weekly</option>
-                                        <option>Monthly</option>
+                                            <option>Weekly</option>
+                                            <option>Monthly</option>
                                         </select>
                                         <select>
-                                        <option>Grade 3</option>
-                                        <option>Grade 4</option>
-                                        <option>Grade 5</option>
+                                            <option>Grade 3</option>
+                                            <option>Grade 4</option>
+                                            <option>Grade 5</option>
                                         </select>
                                     </div>
-                                    </div>
+                                </div>
 
-                                    <div class="chart-legend">
+                                <div class="chart-legend">
                                     <div><span class="dot present"></span>Total Present</div>
                                     <div><span class="dot absent"></span>Total Absent</div>
-                                    </div>
+                                </div>
 
-                                    <div class="canvas-div-wrp">
-                                        <canvas id="attendanceChart"></canvas>
-                                    </div>
-                             </div>
+                                <div class="canvas-div-wrp">
+                                    <canvas id="attendanceChart"></canvas>
+                                </div>
+                            </div>
                         </div>
-                        
+
                     </div>
-                    
+
 
                     <div class="dashboard_calendar_wrapper">
                         <div class="calendar-container" style="width: 100%;">
@@ -210,38 +211,38 @@
                             <h4 class="agenda-title">Agenda</h4>
                             <div class="all-grades-div agenda-col-peach">
                                 <div class="grades-left">
-                                  <p class="agenda-time">08:00 am</p>
+                                    <p class="agenda-time">08:00 am</p>
                                 </div>
                                 <div class="grades-right">
-                                   <p class="ageda-grade">All Grade</p>
-                                   <p class="agenda-desc">Homeroom & Announcement</p>
+                                    <p class="ageda-grade">All Grade</p>
+                                    <p class="agenda-desc">Homeroom & Announcement</p>
                                 </div>
                             </div>
                             <div class="all-grades-div agenda-col-yellow">
                                 <div class="grades-left">
-                                  <p class="agenda-time">10:00 am</p>
+                                    <p class="agenda-time">10:00 am</p>
                                 </div>
                                 <div class="grades-right">
-                                   <p class="ageda-grade">Grade 3-5</p>
-                                   <p class="agenda-desc">Math Review & Practice</p>
+                                    <p class="ageda-grade">Grade 3-5</p>
+                                    <p class="agenda-desc">Math Review & Practice</p>
                                 </div>
                             </div>
                             <div class="all-grades-div agenda-col-pink">
                                 <div class="grades-left">
-                                  <p class="agenda-time">10:030 am</p>
+                                    <p class="agenda-time">10:030 am</p>
                                 </div>
                                 <div class="grades-right">
-                                   <p class="ageda-grade">Grade 6-8</p>
-                                   <p class="agenda-desc">Science Experiment </p>
+                                    <p class="ageda-grade">Grade 6-8</p>
+                                    <p class="agenda-desc">Science Experiment </p>
                                 </div>
                             </div>
                             <div class="all-grades-div agenda-col-yellow">
                                 <div class="grades-left">
-                                  <p class="agenda-time">10:00 am</p>
+                                    <p class="agenda-time">10:00 am</p>
                                 </div>
                                 <div class="grades-right">
-                                   <p class="ageda-grade">Grade 3-5</p>
-                                   <p class="agenda-desc">Math Review & Practice</p>
+                                    <p class="ageda-grade">Grade 3-5</p>
+                                    <p class="agenda-desc">Math Review & Practice</p>
                                 </div>
                             </div>
                         </div>
@@ -249,74 +250,74 @@
                 </div>
                 <div class="task-assignment-wrp">
                     <div class="task-table-wrp">
-                         <div class="task-header-ts">
-                        <h2 class="task-title-ts">Tasks</h2>
-                        <button class="add-btn-ts"><i class="fa-solid fa-plus"></i> Add Task</button>
+                        <div class="task-header-ts">
+                            <h2 class="task-title-ts">Tasks</h2>
+                            <button class="add-btn-ts"><i class="fa-solid fa-plus"></i> Add Task</button>
                         </div>
 
                         <div class="search-bar-ts">
-                        <i class="fa-solid fa-magnifying-glass search-icon-ts"></i>
-                        <input type="text" placeholder="Search Task" />
+                            <i class="fa-solid fa-magnifying-glass search-icon-ts"></i>
+                            <input type="text" placeholder="Search Task" />
                         </div>
 
                         <div class="task-list-ts">
-                        <div class="task-item-ts">
-                            <input type="checkbox" class="checkbox-ts" />
-                            <div class="task-info-ts">
-                            <h3 class="task-name-ts">Lorem Ipsum</h3>
-                            <p class="task-date-ts">Sep 09, 2025</p>
+                            <div class="task-item-ts">
+                                <input type="checkbox" class="checkbox-ts" />
+                                <div class="task-info-ts">
+                                    <h3 class="task-name-ts">Lorem Ipsum</h3>
+                                    <p class="task-date-ts">Sep 09, 2025</p>
+                                </div>
+                                <div class="task-actions-ts">
+                                    <i class="fa-solid fa-pen edit-icon-ts"></i>
+                                    <i class="fa-solid fa-trash delete-icon-ts"></i>
+                                </div>
                             </div>
-                            <div class="task-actions-ts">
-                            <i class="fa-solid fa-pen edit-icon-ts"></i>
-                            <i class="fa-solid fa-trash delete-icon-ts"></i>
-                            </div>
-                        </div>
 
-                        <div class="task-item-ts">
-                            <input type="checkbox" class="checkbox-ts" checked />
-                            <div class="task-info-ts">
-                            <h3 class="task-name-ts">Lorem Ipsum</h3>
-                            <p class="task-date-ts">Sep 09, 2025</p>
+                            <div class="task-item-ts">
+                                <input type="checkbox" class="checkbox-ts" checked />
+                                <div class="task-info-ts">
+                                    <h3 class="task-name-ts">Lorem Ipsum</h3>
+                                    <p class="task-date-ts">Sep 09, 2025</p>
+                                </div>
+                                <div class="task-actions-ts">
+                                    <i class="fa-solid fa-pen edit-icon-ts"></i>
+                                    <i class="fa-solid fa-trash delete-icon-ts"></i>
+                                </div>
                             </div>
-                            <div class="task-actions-ts">
-                            <i class="fa-solid fa-pen edit-icon-ts"></i>
-                            <i class="fa-solid fa-trash delete-icon-ts"></i>
-                            </div>
-                        </div>
 
-                        <div class="task-item-ts">
-                            <input type="checkbox" class="checkbox-ts" checked />
-                            <div class="task-info-ts">
-                            <h3 class="task-name-ts">Lorem Ipsum</h3>
-                            <p class="task-date-ts">Sep 09, 2025</p>
+                            <div class="task-item-ts">
+                                <input type="checkbox" class="checkbox-ts" checked />
+                                <div class="task-info-ts">
+                                    <h3 class="task-name-ts">Lorem Ipsum</h3>
+                                    <p class="task-date-ts">Sep 09, 2025</p>
+                                </div>
+                                <div class="task-actions-ts">
+                                    <i class="fa-solid fa-pen edit-icon-ts"></i>
+                                    <i class="fa-solid fa-trash delete-icon-ts"></i>
+                                </div>
                             </div>
-                            <div class="task-actions-ts">
-                            <i class="fa-solid fa-pen edit-icon-ts"></i>
-                            <i class="fa-solid fa-trash delete-icon-ts"></i>
-                            </div>
-                        </div>
 
-                        <div class="task-item-ts">
-                            <input type="checkbox" class="checkbox-ts" />
-                            <div class="task-info-ts">
-                            <h3 class="task-name-ts">Lorem Ipsum</h3>
-                            <p class="task-date-ts">Sep 09, 2025</p>
+                            <div class="task-item-ts">
+                                <input type="checkbox" class="checkbox-ts" />
+                                <div class="task-info-ts">
+                                    <h3 class="task-name-ts">Lorem Ipsum</h3>
+                                    <p class="task-date-ts">Sep 09, 2025</p>
+                                </div>
+                                <div class="task-actions-ts">
+                                    <i class="fa-solid fa-pen edit-icon-ts"></i>
+                                    <i class="fa-solid fa-trash delete-icon-ts"></i>
+                                </div>
                             </div>
-                            <div class="task-actions-ts">
-                            <i class="fa-solid fa-pen edit-icon-ts"></i>
-                            <i class="fa-solid fa-trash delete-icon-ts"></i>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="assignment-chart-wrp">
-                         <div class="assignment-header">
+                        <div class="assignment-header">
                             <h2>Assignment Completion</h2>
                             <div class="dropdown">
                                 <select>
-                                <option>Month</option>
-                                <option>Quarter</option>
-                                <option>Year</option>
+                                    <option>Month</option>
+                                    <option>Quarter</option>
+                                    <option>Year</option>
                                 </select>
                             </div>
                         </div>
@@ -329,53 +330,53 @@
                 <div class="activity-notice-mssg-wrp">
                     <div class="activity-card-st">
                         <div class="activity-header-st">
-                        <h2 class="activity-title-st">Student Activity</h2>
-                        <a href="#" class="view-all-st">View All</a>
+                            <h2 class="activity-title-st">Student Activity</h2>
+                            <a href="#" class="view-all-st">View All</a>
                         </div>
 
                         <div class="activity-list-st">
-                        <div class="activity-item-st">
-                            <div class="icon-circle-st blue-st">
-                            <i class="fa-solid fa-trophy"></i>
+                            <div class="activity-item-st">
+                                <div class="icon-circle-st blue-st">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="activity-details-st">
+                                    <h3 class="activity-heading-st">Regional Urdu Champion</h3>
+                                    <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
+                                    <span class="activity-time-st">2 days ago</span>
+                                </div>
                             </div>
-                            <div class="activity-details-st">
-                            <h3 class="activity-heading-st">Regional Urdu Champion</h3>
-                            <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
-                            <span class="activity-time-st">2 days ago</span>
-                            </div>
-                        </div>
 
-                        <div class="activity-item-st">
-                            <div class="icon-circle-st purple-st">
-                            <i class="fa-solid fa-trophy"></i>
+                            <div class="activity-item-st">
+                                <div class="icon-circle-st purple-st">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="activity-details-st">
+                                    <h3 class="activity-heading-st">Won Regional Debate Competition</h3>
+                                    <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
+                                    <span class="activity-time-st">2 days ago</span>
+                                </div>
                             </div>
-                            <div class="activity-details-st">
-                            <h3 class="activity-heading-st">Won Regional Debate Competition</h3>
-                            <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
-                            <span class="activity-time-st">2 days ago</span>
-                            </div>
-                        </div>
 
-                        <div class="activity-item-st">
-                            <div class="icon-circle-st yellow-st">
-                            <i class="fa-solid fa-trophy"></i>
+                            <div class="activity-item-st">
+                                <div class="icon-circle-st yellow-st">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="activity-details-st">
+                                    <h3 class="activity-heading-st">2nd Place at UrduFair</h3>
+                                    <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
+                                    <span class="activity-time-st">2 days ago</span>
+                                </div>
                             </div>
-                            <div class="activity-details-st">
-                            <h3 class="activity-heading-st">2nd Place at UrduFair</h3>
-                            <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
-                            <span class="activity-time-st">2 days ago</span>
+                            <div class="activity-item-st">
+                                <div class="icon-circle-st yellow-st">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="activity-details-st">
+                                    <h3 class="activity-heading-st">2nd Place at UrduFair</h3>
+                                    <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
+                                    <span class="activity-time-st">2 days ago</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="activity-item-st">
-                            <div class="icon-circle-st yellow-st">
-                            <i class="fa-solid fa-trophy"></i>
-                            </div>
-                            <div class="activity-details-st">
-                            <h3 class="activity-heading-st">2nd Place at UrduFair</h3>
-                            <p class="activity-subtext-st">Winning robots triumph in engineering Challenge</p>
-                            <span class="activity-time-st">2 days ago</span>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="notice-board-nb">
@@ -387,76 +388,76 @@
                         <div class="notice-list-nb">
 
                             <div class="notice-item-nb">
-                            <img src="../images/noticebImg_1.png" alt="notice" class="notice-img-nb" />
-                            <div class="notice-content-nb">
-                                <h3 class="notice-heading-nb">Lorem Ipsum</h3>
-                            </div>
-                            <div class="notice-date-nb">04/18/2026</div>
-                            <div class="notice-author-nb">
-                                <p>By Lorem Ipsum</p>
-                                <span>(Urdu Teacher)</span>
-                            </div>
-                            <div class="notice-views-nb">
-                                <i class="fa fa-eye"></i> 325
-                            </div>
-                            </div>
-
-                            <div class="notice-item-nb">
-                            <img src="../images/noticebImg_2.png" alt="notice" class="notice-img-nb" />
-                            <div class="notice-content-nb">
-                                <h3 class="notice-heading-nb">Lorem Ipsum</h3>
-                            </div>
-                            <div class="notice-date-nb">04/18/2026</div>
-                            <div class="notice-author-nb">
-                                <p>By Lorem Ipsum</p>
-                                <span>(Urdu Teacher)</span>
-                            </div>
-                            <div class="notice-views-nb">
-                                <i class="fa fa-eye"></i> 325
-                            </div>
+                                <img src="../images/noticebImg_1.png" alt="notice" class="notice-img-nb" />
+                                <div class="notice-content-nb">
+                                    <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                </div>
+                                <div class="notice-date-nb">04/18/2026</div>
+                                <div class="notice-author-nb">
+                                    <p>By Lorem Ipsum</p>
+                                    <span>(Urdu Teacher)</span>
+                                </div>
+                                <div class="notice-views-nb">
+                                    <i class="fa fa-eye"></i> 325
+                                </div>
                             </div>
 
                             <div class="notice-item-nb">
-                            <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
-                            <div class="notice-content-nb">
-                                <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                <img src="../images/noticebImg_2.png" alt="notice" class="notice-img-nb" />
+                                <div class="notice-content-nb">
+                                    <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                </div>
+                                <div class="notice-date-nb">04/18/2026</div>
+                                <div class="notice-author-nb">
+                                    <p>By Lorem Ipsum</p>
+                                    <span>(Urdu Teacher)</span>
+                                </div>
+                                <div class="notice-views-nb">
+                                    <i class="fa fa-eye"></i> 325
+                                </div>
                             </div>
-                            <div class="notice-date-nb">04/18/2026</div>
-                            <div class="notice-author-nb">
-                                <p>By Lorem Ipsum</p>
-                                <span>(Urdu Teacher)</span>
+
+                            <div class="notice-item-nb">
+                                <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
+                                <div class="notice-content-nb">
+                                    <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                </div>
+                                <div class="notice-date-nb">04/18/2026</div>
+                                <div class="notice-author-nb">
+                                    <p>By Lorem Ipsum</p>
+                                    <span>(Urdu Teacher)</span>
+                                </div>
+                                <div class="notice-views-nb">
+                                    <i class="fa fa-eye"></i> 325
+                                </div>
                             </div>
-                            <div class="notice-views-nb">
-                                <i class="fa fa-eye"></i> 325
+                            <div class="notice-item-nb">
+                                <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
+                                <div class="notice-content-nb">
+                                    <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                </div>
+                                <div class="notice-date-nb">04/18/2026</div>
+                                <div class="notice-author-nb">
+                                    <p>By Lorem Ipsum</p>
+                                    <span>(Urdu Teacher)</span>
+                                </div>
+                                <div class="notice-views-nb">
+                                    <i class="fa fa-eye"></i> 325
+                                </div>
                             </div>
-                            </div>
-                             <div class="notice-item-nb">
-                            <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
-                            <div class="notice-content-nb">
-                                <h3 class="notice-heading-nb">Lorem Ipsum</h3>
-                            </div>
-                            <div class="notice-date-nb">04/18/2026</div>
-                            <div class="notice-author-nb">
-                                <p>By Lorem Ipsum</p>
-                                <span>(Urdu Teacher)</span>
-                            </div>
-                            <div class="notice-views-nb">
-                                <i class="fa fa-eye"></i> 325
-                            </div>
-                            </div>
-                             <div class="notice-item-nb">
-                            <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
-                            <div class="notice-content-nb">
-                                <h3 class="notice-heading-nb">Lorem Ipsum</h3>
-                            </div>
-                            <div class="notice-date-nb">04/18/2026</div>
-                            <div class="notice-author-nb">
-                                <p>By Lorem Ipsum</p>
-                                <span>(Urdu Teacher)</span>
-                            </div>
-                            <div class="notice-views-nb">
-                                <i class="fa fa-eye"></i> 325
-                            </div>
+                            <div class="notice-item-nb">
+                                <img src="../images/noticebImg_3.png" alt="notice" class="notice-img-nb" />
+                                <div class="notice-content-nb">
+                                    <h3 class="notice-heading-nb">Lorem Ipsum</h3>
+                                </div>
+                                <div class="notice-date-nb">04/18/2026</div>
+                                <div class="notice-author-nb">
+                                    <p>By Lorem Ipsum</p>
+                                    <span>(Urdu Teacher)</span>
+                                </div>
+                                <div class="notice-views-nb">
+                                    <i class="fa fa-eye"></i> 325
+                                </div>
                             </div>
 
                         </div>
@@ -469,47 +470,51 @@
 
                         <div class="messages-list-sg">
                             <div class="message-item-sg">
-                            <img src="../images/drImg.png" alt="user" class="message-img-sg" />
-                            <div class="message-content-sg">
-                                <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
-                                <p class="message-text-sg">
-                                Please ensure the monthly attendance report is accurate before the April 30th deadline
-                                </p>
-                            </div>
-                            <div class="message-time-sg">9:00 AM</div>
-                            </div>
-
-                            <div class="message-item-sg">
-                            <img src="../images/drImg.png" alt="user" class="message-img-sg" />
-                            <div class="message-content-sg">
-                                <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
-                                <p class="message-text-sg">
-                                Please ensure the monthly attendance report is accurate before the April 30th deadline
-                                </p>
-                            </div>
-                            <div class="message-time-sg">9:00 AM</div>
+                                <img src="../images/drImg.png" alt="user" class="message-img-sg" />
+                                <div class="message-content-sg">
+                                    <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
+                                    <p class="message-text-sg">
+                                        Please ensure the monthly attendance report is accurate before the April 30th
+                                        deadline
+                                    </p>
+                                </div>
+                                <div class="message-time-sg">9:00 AM</div>
                             </div>
 
                             <div class="message-item-sg">
-                            <img src="../images/drImg.png" alt="user" class="message-img-sg" />
-                            <div class="message-content-sg">
-                                <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
-                                <p class="message-text-sg">
-                                Please ensure the monthly attendance report is accurate before the April 30th deadline
-                                </p>
-                            </div>
-                            <div class="message-time-sg">9:00 AM</div>
+                                <img src="../images/drImg.png" alt="user" class="message-img-sg" />
+                                <div class="message-content-sg">
+                                    <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
+                                    <p class="message-text-sg">
+                                        Please ensure the monthly attendance report is accurate before the April 30th
+                                        deadline
+                                    </p>
+                                </div>
+                                <div class="message-time-sg">9:00 AM</div>
                             </div>
 
                             <div class="message-item-sg">
-                            <img src="../images/drImg.png" alt="user" class="message-img-sg" />
-                            <div class="message-content-sg">
-                                <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
-                                <p class="message-text-sg">
-                                Please ensure the monthly attendance report is accurate before the April 30th deadline
-                                </p>
+                                <img src="../images/drImg.png" alt="user" class="message-img-sg" />
+                                <div class="message-content-sg">
+                                    <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
+                                    <p class="message-text-sg">
+                                        Please ensure the monthly attendance report is accurate before the April 30th
+                                        deadline
+                                    </p>
+                                </div>
+                                <div class="message-time-sg">9:00 AM</div>
                             </div>
-                            <div class="message-time-sg">9:00 AM</div>
+
+                            <div class="message-item-sg">
+                                <img src="../images/drImg.png" alt="user" class="message-img-sg" />
+                                <div class="message-content-sg">
+                                    <h3 class="message-name-sg">Dr. Lila Ramirez</h3>
+                                    <p class="message-text-sg">
+                                        Please ensure the monthly attendance report is accurate before the April 30th
+                                        deadline
+                                    </p>
+                                </div>
+                                <div class="message-time-sg">9:00 AM</div>
                             </div>
                         </div>
                     </div>
@@ -517,7 +522,7 @@
             </div>
         </div>
     </div>
-     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         flatpickr("#myCalendar", {
             dateFormat: "d M Y",
@@ -525,168 +530,177 @@
             defaultDate: "2025-09-11",
 
         });
-    </script> 
+    </script>
     <script>
-    const ctx = document.getElementById("studentsChart").getContext("2d");
-    new Chart(ctx, {
-      type: "doughnut",
-      data: {
-        labels: ["Boys", "Girls"],
-        datasets: [
-          {
-            data: [45.414, 40.270],
-            backgroundColor: ["#2e1b93", "#a38df7"],
-            borderWidth: 0,
-            cutout: "70%"
-          }
-        ]
-      },
-      options: {
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: (ctx) => `${ctx.label}: ${ctx.parsed} students`
+        const ctx = document.getElementById("studentsChart").getContext("2d");
+        new Chart(ctx, {
+            type: "doughnut",
+            data: {
+                labels: ["Boys", "Girls"],
+                datasets: [
+                    {
+                        data: [45.414, 40.270],
+                        backgroundColor: ["#2e1b93", "#a38df7"],
+                        borderWidth: 0,
+                        cutout: "70%"
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.label}: ${ctx.parsed} students`
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-    });
-  </script>
-  <script>
+        });
+    </script>
+    <script>
         const ctxd = document.getElementById('attendanceChart').getContext('2d');
 
         new Chart(ctxd, {
-        type: 'bar',
-        data: {
-            labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-            datasets: [
-            {
-                label: 'Total Present',
-                data: [75, 0, 50, 0, 75, 0, 75],
-                backgroundColor: '#7e3ff2',
-                borderRadius: 6,
-                barPercentage: 0.5,
+            type: 'bar',
+            data: {
+                labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                datasets: [
+                    {
+                        label: 'Total Present',
+                        data: [75, 0, 50, 0, 75, 0, 75],
+                        backgroundColor: '#7e3ff2',
+                        borderRadius: 6,
+                        barPercentage: 0.5,
+                    },
+                    {
+                        label: 'Total Absent',
+                        data: [0, 100, 0, 85, 0, 30, 0],
+                        backgroundColor: '#00aaff',
+                        borderRadius: 6,
+                        barPercentage: 0.5,
+                    }
+                ]
             },
-            {
-                label: 'Total Absent',
-                data: [0, 100, 0, 85, 0, 30, 0],
-                backgroundColor: '#00aaff',
-                borderRadius: 6,
-                barPercentage: 0.5,
-            }
-            ]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-            legend: { display: false },
-            },
-            scales: {
-            y: {
-                beginAtZero: true,
-                max: 100,
-                ticks: {
-                stepSize: 25,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
                 },
-                grid: {
-                color: '#f0f0f0',
-                },
-            },
-            x: {
-                grid: { display: false },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            stepSize: 25,
+                        },
+                        grid: {
+                            color: '#f0f0f0',
+                        },
+                    },
+                    x: {
+                        grid: { display: false },
+                    }
+                }
             }
-            }
-        }
         });
-  </script>
-  <script>
-    const ctp = document.getElementById('assignmentChart').getContext('2d');
+    </script>
+    <script>
+        const ctp = document.getElementById('assignmentChart').getContext('2d');
 
-    new Chart(ctp, {
-    type: 'line',
-    data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [
-        {
-            label: 'Dataset 1',
-            data: [0, 120, 0, 160, 0, 150, 60, 140, 60, 160, 0, 160],
-            borderColor: '#ff6b6b',
-            borderWidth: 2,
-            tension: 0.5,
-            fill: false,
-        },
-        {
-            label: 'Dataset 2',
-            data: [0, 40, 30, 40, 120, 160, 140, 60, 40, 60, 80, 60],
-            borderColor: '#0051ff',
-            borderWidth: 2,
-            tension: 0.5,
-            fill: false,
-        }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-        legend: { display: false },
-        },
-        scales: {
-        y: {
-            beginAtZero: true,
-            grid: { color: '#f0f0f0' },
-            ticks: { stepSize: 40 }
-        },
-        x: {
-            grid: { color: '#f7f7f7' }
-        }
-        },
-        animation: {
-        duration: 1200,
-        easing: 'easeInOutQuart'
-        },
-        elements: {
-        point: { radius: 0 }
-        },
-        plugins: {
-        annotation: {
-            annotations: {
-            line1: {
-                type: 'line',
-                xMin: 9,
-                xMax: 9,
-                borderColor: 'blue',
-                borderDash: [5, 5],
-                borderWidth: 2
+        new Chart(ctp, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    {
+                        label: 'Dataset 1',
+                        data: [0, 120, 0, 160, 0, 150, 60, 140, 60, 160, 0, 160],
+                        borderColor: '#ff6b6b',
+                        borderWidth: 2,
+                        tension: 0.5,
+                        fill: false,
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: [0, 40, 30, 40, 120, 160, 140, 60, 40, 60, 80, 60],
+                        borderColor: '#0051ff',
+                        borderWidth: 2,
+                        tension: 0.5,
+                        fill: false,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#f0f0f0' },
+                        ticks: { stepSize: 40 }
+                    },
+                    x: {
+                        grid: { color: '#f7f7f7' }
+                    }
+                },
+                animation: {
+                    duration: 1200,
+                    easing: 'easeInOutQuart'
+                },
+                elements: {
+                    point: { radius: 0 }
+                },
+                plugins: {
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                xMin: 9,
+                                xMax: 9,
+                                borderColor: 'blue',
+                                borderDash: [5, 5],
+                                borderWidth: 2
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [Chart.registry.getPlugin('annotation')]
+        });
+
+
+
+
+        const sidebar = document.querySelector('.sidebar_wrapper2');
+        const menu = document.getElementById('dashboard_menu_bar');
+        const caret = document.getElementById('caret_id')
+
+        menu.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
             }
+        }))
+
+        caret.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
             }
-        }
-        }
-    },
-    plugins: [Chart.registry.getPlugin('annotation')]
-    });
+        }))
 
-  </script>
-  <!-- <script>
-    const sidebar=document.querySelector('sidebar_wrapper2')
-    const menubar=document.querySelector('menu')
-    const cutbutton=document.querySelector('cutbutton')
+    </script>
 
-    menubar.addEventListener('click',(()=>{
-       if (sidebar.classList.contains('.sidebar_not_active')) {
-        sidebar.classList.add('sidebar_active')
-        sidebar.classList.remove('sidebar_not_active')
-       } else {
-        sidebar.classList.add('sidebar_not_active')
-        sidebar.classList.remove('sidebar_active')
-       }
-    }))
-    cutbutton.addEventListener('click',(()=>{
-        sidebar.classList.add('sidebar_not_active')
-        sidebar.classList.remove('sidebar_active')
-    }))
-  </script> -->
 </body>
 
 </html>
