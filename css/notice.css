@@ -194,8 +194,8 @@
   border-radius: 10px;
   padding: 10px;
   position: relative;
-  left: -239px;
   z-index: 1000000;
+  margin-top: 50px;
 }
 
 .blue-card-section {
