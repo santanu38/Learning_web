@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></script>
 </head>
 
 <body class="body_class">
     <div class="dashboard_container">
-        <div class="sidebar_wrapper2">
+        <div class="sidebar_wrapper2  ">
             <img src="./images/Logo.png" />
+            <i class="fa-solid fa-angle-left cutbutton"></i>
             <div class="sidebar_links">
 
                 <a href="" class="sidebar_link_wrapper">
@@ -86,6 +87,9 @@
                     <div class="user_name_wrapper">
                         <p><span>Hello,</span> Trishit</p>
                         <img src="./images/image (9).png" />
+                    </div>
+                    <div >
+                        <i class="fa-solid fa-bars menu " onclick="handleChange()"></i>
                     </div>
                 </div>
 
@@ -664,6 +668,25 @@
     });
 
   </script>
+  <!-- <script>
+    const sidebar=document.querySelector('sidebar_wrapper2')
+    const menubar=document.querySelector('menu')
+    const cutbutton=document.querySelector('cutbutton')
+
+    menubar.addEventListener('click',(()=>{
+       if (sidebar.classList.contains('.sidebar_not_active')) {
+        sidebar.classList.add('sidebar_active')
+        sidebar.classList.remove('sidebar_not_active')
+       } else {
+        sidebar.classList.add('sidebar_not_active')
+        sidebar.classList.remove('sidebar_active')
+       }
+    }))
+    cutbutton.addEventListener('click',(()=>{
+        sidebar.classList.add('sidebar_not_active')
+        sidebar.classList.remove('sidebar_active')
+    }))
+  </script> -->
 </body>
 
 </html>
