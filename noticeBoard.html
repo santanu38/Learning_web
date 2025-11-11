@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/noticeBoard.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js">
+    </script>
+    <link href="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></script>
+    <title>Notice Board</title>
+</head>
+
+<body class="body_class">
+    <div class="dashboard_container">
+        <div class="sidebar_wrapper2 sidebar2_not_active">
+            <img src="./images/Logo.png" />
+            <i class="fa-solid fa-caret-left" style="position: absolute;top: 0;
+            right: 0;font-size: 25px;" id="caret_id"></i>
+            <div class="sidebar_links">
+
+                <a href="" class="sidebar_link_wrapper">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Dashboard</p>
+                </a>
+
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Students</p>
+                </a>
+
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <p>Assignment</p>
+                </a>
+
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-regular fa-bell"></i>
+                    <p>Notification</p>
+                </a>
+
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>Calendar</p>
+                </a>
+
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Profile</p>
+                </a>
+                <a class="sidebar_link_wrapper">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Log Out</p>
+                </a>
+            </div>
+        </div>
+        <div class="center_layout">
+            <div class="dahsboard_header">
+                <div class="dashboard_input_wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search here" />
+                </div>
+
+                <div class="dashboard_notification_wrapper">
+                    <div class="bell_wrapper">
+                        <i class="fa-regular fa-bell"></i>
+                        <span>21</span>
+                    </div>
+                    <div class="bell_wrapper" style="background-color: transparent; padding: 0 0;">
+                        <span>21</span>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="bell_wrapper" style="background-color: transparent; padding: 0 0;">
+                        <span>21</span>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="user_name_wrapper">
+                        <p><span>Hello,</span> Trishit</p>
+                        <img src="./images/image (9).png" />
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars" id="dashboard_menu_bar"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="notice_board_container">
+             
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#myCalendar", {
+            dateFormat: "d M Y",
+            inline: true,
+            defaultDate: "2025-09-11",
+
+        });
+    </script>
+    <script>
+        const ctx = document.getElementById("studentsChart").getContext("2d");
+        new Chart(ctx, {
+            type: "doughnut",
+            data: {
+                labels: ["Boys", "Girls"],
+                datasets: [
+                    {
+                        data: [45.414, 40.270],
+                        backgroundColor: ["#2e1b93", "#a38df7"],
+                        borderWidth: 0,
+                        cutout: "70%"
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.label}: ${ctx.parsed} students`
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        const ctxd = document.getElementById('attendanceChart').getContext('2d');
+
+        new Chart(ctxd, {
+            type: 'bar',
+            data: {
+                labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                datasets: [
+                    {
+                        label: 'Total Present',
+                        data: [75, 0, 50, 0, 75, 0, 75],
+                        backgroundColor: '#7e3ff2',
+                        borderRadius: 6,
+                        barPercentage: 0.5,
+                    },
+                    {
+                        label: 'Total Absent',
+                        data: [0, 100, 0, 85, 0, 30, 0],
+                        backgroundColor: '#00aaff',
+                        borderRadius: 6,
+                        barPercentage: 0.5,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            stepSize: 25,
+                        },
+                        grid: {
+                            color: '#f0f0f0',
+                        },
+                    },
+                    x: {
+                        grid: { display: false },
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        const ctp = document.getElementById('assignmentChart').getContext('2d');
+
+        new Chart(ctp, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [
+                    {
+                        label: 'Dataset 1',
+                        data: [0, 120, 0, 160, 0, 150, 60, 140, 60, 160, 0, 160],
+                        borderColor: '#ff6b6b',
+                        borderWidth: 2,
+                        tension: 0.5,
+                        fill: false,
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: [0, 40, 30, 40, 120, 160, 140, 60, 40, 60, 80, 60],
+                        borderColor: '#0051ff',
+                        borderWidth: 2,
+                        tension: 0.5,
+                        fill: false,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#f0f0f0' },
+                        ticks: { stepSize: 40 }
+                    },
+                    x: {
+                        grid: { color: '#f7f7f7' }
+                    }
+                },
+                animation: {
+                    duration: 1200,
+                    easing: 'easeInOutQuart'
+                },
+                elements: {
+                    point: { radius: 0 }
+                },
+                plugins: {
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                xMin: 9,
+                                xMax: 9,
+                                borderColor: 'blue',
+                                borderDash: [5, 5],
+                                borderWidth: 2
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [Chart.registry.getPlugin('annotation')]
+        });
+
+
+
+
+        const sidebar = document.querySelector('.sidebar_wrapper2');
+        const menu = document.getElementById('dashboard_menu_bar');
+        const caret = document.getElementById('caret_id')
+
+        menu.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+
+        caret.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+
+    </script>
+
+</body>
+
+</html>
