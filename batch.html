@@ -21,8 +21,10 @@
 
 <body class="body_class">
     <div class="dashboard_container">
-        <div class="sidebar_wrapper2">
+        <div class="sidebar_wrapper2 sidebar2_not_active">
             <img src="./images/Logo.png" />
+             <i class="fa-solid fa-caret-left" style="position: absolute;top: 0;
+            right: 0;font-size: 25px;" id="caret_id"></i>
             <div class="sidebar_links">
 
                 <a href="" class="sidebar_link_wrapper">
@@ -84,6 +86,9 @@
                         <p><span>Hello,</span> Trishit</p>
                         <img src="./images/image (9).png" />
                     </div>
+                    <div>
+                        <i class="fa-solid fa-bars" id="dashboard_menu_bar"></i>
+                    </div>
                 </div>
 
 
@@ -108,6 +113,54 @@
 
         </div>
     </div>
+    <script>
+        // const caret=document.getElementById('caret_id')
+        // const sidebar=document.querySelector('.sidebar_wrapper2')
+        // const menubar=document.getElementById('dasboard_menu_bar')
+
+        // caret.addEventListener('click',(e)=>{
+        //    if( sidebar.classList.contains('sidebar2_not_active')){
+        //     sidebar.classList.add('sidebar2_active')
+        //     sidebar.classList.remove('sidebar2_not_active')
+        //    }else{
+        //     sidebar.classList.add('sidebar2_not_active')
+        //     sidebar.classList.remove('sidebar2_active')
+        //    }
+        // })
+        // menubar.addEventListener('click',(e)=>{
+        //    if( sidebar.classList.contains('sidebar2_not_active')){
+        //     sidebar.classList.add('sidebar2_active')
+        //     sidebar.classList.remove('sidebar2_not_active')
+        //    }else{
+        //     sidebar.classList.add('sidebar2_not_active')
+        //     sidebar.classList.remove('sidebar2_active')
+        //    }
+        // })
+
+             const sidebar = document.querySelector('.sidebar_wrapper2');
+        const menu = document.getElementById('dashboard_menu_bar');
+        const caret = document.getElementById('caret_id')
+
+        menu.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+
+        caret.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+    </script>
 </body>
 
 </html>

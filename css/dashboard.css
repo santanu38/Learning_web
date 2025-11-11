@@ -1150,6 +1150,10 @@
   display: none;
 }
 
+#dashboard_menu_bar{
+    display: none;
+  }
+
 /* responcive screen */
 
 
@@ -1284,6 +1288,9 @@
   .sidebar2_not_active {
     transform: translateX(-100%);
     transition: 0.2s linear all;
+  }
+  #dashboard_menu_bar{
+    display: block;
   }
 
   .dahsboard_header {

@@ -248,3 +248,41 @@
     width: 100%;
     font-size: 13px;
 }
+
+.sidebar_active {
+  transform: translateX(0);
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar_not_active {
+  transform: translateX(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar_wrapper2 #caret_id {
+  display: none;
+}
+
+
+@media (max-width:1260px){
+.student_list_table_container.student_table.student_header_wrapper{
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* width: 80%; */
+    }
+}
+@media (max-width:1195px){
+    .student_table{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 990px) {
+    .sidebar_not_active{
+        transform: translateX(-100%);
+        transition: 0.2s linear all;
+    }
+      .sidebar_wrapper2 #caret_id {
+    display: block;
+  }
+}

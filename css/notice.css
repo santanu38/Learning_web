@@ -186,14 +186,13 @@
 
 }
 
-/* side bar changes/overlap becz its postion was fixed in dashboard.css */
 .blue-card {
   width: 200px;
   height: 117px;
   background-color: #2F2483;
   border-radius: 10px;
   padding: 10px;
-  position: relative;
+  /* position: relative; */
   z-index: 1000000;
   margin-top: 50px;
 }
