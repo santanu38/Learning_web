@@ -1,0 +1,236 @@
+.dasbhoard_calendar_content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.dashboard_event_calendar {
+    width: 72%;
+}
+
+.fc-direction-ltr {
+    direction: ltr;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 7.1px 0px #00000027;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+.fc .fc-button-primary {
+    font-size: 14px !important;
+    background-color: #e8e2fe !important;
+    color: #000 !important;
+    border: none !important;
+}
+
+.dashboard_students_courses_wrapper {
+    width: 27%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.dashboard_students_list_wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 4px 7.1px 0px #00000027;
+}
+
+.dashboard_students_header {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9E2FF;
+}
+
+.dashboard_students_header h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dashboard_students_header p {
+    font-size: 13px;
+}
+
+.dashboard_student_list789 {
+    padding: 10px;
+    background-color: #fff;
+    height: 45vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.dashboard_student_list789::-webkit-scrollbar {
+    display: none;
+}
+
+.student_46232 {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12.1px 0px #00000027;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.student_img_wrapper7899 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.student_img_wrapper7899 img {
+    width: 40px;
+}
+
+.student_img_wrapper7899 h2 {
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.student_46232 button {
+    font-size: 10px;
+    padding: 5px 10px;
+    background-color: #E9E2FF;
+    border-radius: 5px;
+    border: none;
+}
+
+.student_img_wrapper7899 p {
+    font-size: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+}
+
+.student_img_wrapper7899 {
+    width: 70%;
+    overflow: hidden;
+}
+
+.input_wrapper455666 {
+    width: 100%;
+}
+
+.input_wrapper455666 input {
+    width: 100%;
+    font-size: 8px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    border: 1px solid #676666;
+}
+
+.time_wrapper {
+    width: 25%;
+}
+
+.time_wrapper h6 {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.join_btn_wrapper4566 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.join_btn_wrapper4566 button {
+    background-color: #2f2483;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 8px;
+}
+
+@media(max-width: 1411px) {
+    .courses_list_456666 .student_46232 {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .courses_list_456666 .student_img_wrapper7899 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .courses_list_456666 .time_wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .courses_list_456666 .join_btn_wrapper4566 {
+        margin-top: 0px;
+    }
+
+    .courses_list_456666 .student_img_wrapper7899 p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+    }
+}
+
+@media(max-width:1150px) {
+    .dasbhoard_calendar_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .dashboard_event_calendar {
+        width: 100%;
+    }
+
+    .dashboard_students_courses_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .dashboard_students_list_wrapper {
+        width: 48.5%;
+    }
+}
+
+@media(max-width:615px) {
+    .dashboard_students_courses_wrapper {
+        flex-direction: column;
+    }
+
+    .dashboard_students_list_wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    .fc .fc-toolbar-title {
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+    .fc .fc-button-primary{
+        font-size: 10px !important;
+    }
+}

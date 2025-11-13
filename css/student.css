@@ -286,3 +286,35 @@
     display: block;
   }
 }
+@media(max-width:850px){
+    .assignment_input_wrapper{
+        width: 48%;
+    }
+}
+@media(max-width:700px){
+    .student_list_wrapper_head{
+        flex-wrap: wrap
+    }
+    .student_list_wrapper_head button{
+        margin-left: auto !important;
+        font-size: 10px !important;
+       margin-top: 10px;
+
+    }
+    .student_list_search_wrapper{
+        margin-left: auto;
+    }
+    .student_list_wrapper_head input{
+        width: 300px;
+    }
+}
+@media(max-width:500px){
+    .assignment_input_wrapper{
+        width: 100%;
+    }
+}
+@media(max-width:400px){
+     .student_list_wrapper_head input{
+        width: 200px;
+    }
+}

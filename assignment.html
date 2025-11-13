@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/blog.css" />
     <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/student.css" />
+    <link rel="stylesheet" href="./css/notice.css"/>
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
@@ -21,36 +22,38 @@
 
 <body class="body_class">
     <div class="dashboard_container">
-        <div class="sidebar_wrapper2">
+        <div class="sidebar_wrapper2 sidebar2_not_active">
             <img src="./images/Logo.png" />
+            <i class="fa-solid fa-caret-left" style="position: absolute;top: 0;
+            right: 0;font-size: 25px;color: #000;" id="caret_id"></i>
             <div class="sidebar_links">
 
-                <a href="" class="sidebar_link_wrapper">
+                <a href="./dashboard.html" class="sidebar_link_wrapper">
                     <i class="fa-solid fa-house"></i>
                     <p>Dashboard</p>
                 </a>
 
-                <a class="sidebar_link_wrapper">
+                <a href="./students.html" class="sidebar_link_wrapper">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <p>Students</p>
                 </a>
 
-                <a class="sidebar_link_wrapper">
+                <a href="./assignment.html" class="sidebar_link_wrapper">
                     <i class="fa-solid fa-note-sticky"></i>
                     <p>Assignment</p>
                 </a>
 
-                <a class="sidebar_link_wrapper">
+                <a href="./notification.html" class="sidebar_link_wrapper">
                     <i class="fa-regular fa-bell"></i>
                     <p>Notification</p>
                 </a>
 
-                <a class="sidebar_link_wrapper">
+                <a href="./calendar.html" class="sidebar_link_wrapper">
                     <i class="fa-regular fa-calendar"></i>
                     <p>Calendar</p>
                 </a>
 
-                <a class="sidebar_link_wrapper">
+                <a href="./profile.html" class="sidebar_link_wrapper">
                     <i class="fa-regular fa-user"></i>
                     <p>Profile</p>
                 </a>
@@ -58,6 +61,18 @@
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <p>Log Out</p>
                 </a>
+            </div>
+            <div class="blue-card">
+                <div class="blue-card-section">
+                    <div>
+                        <h4>Welcome to Urdu Learning Class!</h4>
+                    </div>
+                    <div>
+                        <img src="/images/notice/hand-drawn-baker-cartoon-illustration_23-2150803190-removebg-preview 1.png"
+                            alt="" srcset="">
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="center_layout">
@@ -83,6 +98,9 @@
                     <div class="user_name_wrapper">
                         <p><span>Hello,</span> Trishit</p>
                         <img src="./images/image (9).png" />
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars" id="dashboard_menu_bar"></i>
                     </div>
                 </div>
 
@@ -312,6 +330,33 @@
 
         </div>
     </div>
+
+
+    <script>
+        const sidebar = document.querySelector('.sidebar_wrapper2');
+        const menu = document.getElementById('dashboard_menu_bar');
+        const caret = document.getElementById('caret_id')
+
+        menu.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+
+        caret.addEventListener('click', ((e) => {
+            if (sidebar.classList.contains('sidebar2_not_active')) {
+                sidebar.classList.add('sidebar2_active');
+                sidebar.classList.remove('sidebar2_not_active')
+            } else {
+                sidebar.classList.add('sidebar2_not_active');
+                sidebar.classList.remove('sidebar2_active')
+            }
+        }))
+    </script>
 </body>
 
 </html>
